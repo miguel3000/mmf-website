@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import VerticalLogo from "@/components/VerticalLogo";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const bebasNeue = Bebas_Neue({
@@ -23,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${inter.variable} ${bebasNeue.variable}`}>
       <body className="antialiased font-sans bg-white text-primary">
+        <VerticalLogo />
+        <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
