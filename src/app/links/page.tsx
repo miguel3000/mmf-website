@@ -4,6 +4,8 @@ const partnerLinks = [
   { name: "Maicos Automotive", url: "https://www.maicos.nl" },
   { name: "B&B Designs", url: "https://www.benbdesigns.nl/" },
   { name: "Speezys", url: "https://www.speezys.com" },
+  { name: "Spekking BV", url: "https://www.spekking.eu" },
+  { name: "PJ Professionals", url: "https://www.pjprofessionals.nl" },
 ];
 
 export default function LinksPage() {
