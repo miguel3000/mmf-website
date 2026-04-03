@@ -3,13 +3,13 @@
 export default function VerticalLogo() {
   return (
     <>
-      {/* Desktop: fixed left logo, fully visible */}
+      {/* Desktop: fixed left logo column, fully visible like the invoice */}
       <div
-        className="hidden lg:flex fixed left-0 top-0 h-screen w-24 items-center justify-center z-40 pointer-events-none bg-white"
+        className="hidden lg:flex fixed left-0 top-0 h-screen w-[120px] items-center justify-center z-40 pointer-events-none border-r border-border bg-white"
         aria-hidden="true"
       >
         <span
-          className="font-heading text-primary text-[4rem] leading-none tracking-[0.15em] whitespace-nowrap"
+          className="font-heading text-primary text-[5.5rem] leading-none tracking-[0.2em] whitespace-nowrap"
           style={{
             writingMode: "vertical-rl",
             textOrientation: "mixed",
