@@ -3,8 +3,8 @@ import Link from "next/link";
 import { galleries } from "@/lib/gallery-data";
 
 const categories = [
-  { slug: "festival", label: "FESTIVAL", description: "Evenementen en festivals" },
-  { slug: "auto", label: "AUTO", description: "B&B Designs" },
+  { slug: "festival", label: "FESTIVAL", description: "Evenementen en festivals", heroImage: "/images/festival/Michiel Maessen Fotografie - Hip Hop In Je Smoel - 9.jpg" },
+  { slug: "auto", label: "AUTO", description: "B&B Designs", heroImage: "/images/auto/Michiel Maessen Fotografie - Audi -Stuur.jpg" },
   { slug: "model", label: "MODEL", description: "Modelfotografie" },
   { slug: "webshop", label: "WEBSHOP", description: "Webshop fotografie" },
   { slug: "vrij-werk", label: "VRIJ WERK", description: "Persoonlijke projecten" },
@@ -28,7 +28,7 @@ export default function PortfolioPage() {
               className="group relative aspect-square overflow-hidden"
             >
               <Image
-                src={galleries[cat.slug].images[0]?.src || ""}
+                src={cat.heroImage || galleries[cat.slug].images[0]?.src || ""}
                 alt={cat.label}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
