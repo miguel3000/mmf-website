@@ -55,7 +55,7 @@ export default function HomePage() {
       </section>
 
       {/* Team cards */}
-      <section className="max-w-6xl mx-auto px-6 pb-24 lg:pl-24">
+      <section className="max-w-6xl mx-auto px-6 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member, i) => (
             <ProfileCard key={i} {...member} />

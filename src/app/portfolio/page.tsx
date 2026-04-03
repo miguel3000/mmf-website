@@ -19,7 +19,7 @@ export default function PortfolioPage() {
         </h1>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 pb-24 lg:pl-24">
+      <section className="max-w-6xl mx-auto px-6 pb-24 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {categories.map((cat) => (
             <Link

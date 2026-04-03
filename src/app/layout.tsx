@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className="antialiased font-sans bg-white text-primary">
         <VerticalLogo />
         <Header />
-        <main>{children}</main>
+        <main className="lg:ml-[80px]">{children}</main>
         <Footer />
       </body>
     </html>

@@ -7,7 +7,7 @@ export default function ContactPage() {
         </h1>
       </section>
 
-      <section className="max-w-2xl mx-auto px-6 pb-24 lg:pl-24">
+      <section className="max-w-2xl mx-auto px-6 pb-24">
         <div className="space-y-8">
           {/* Phone */}
           <div className="border-b border-border pb-6">

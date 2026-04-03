@@ -1,8 +1,8 @@
 const partnerLinks = [
   { name: "MsMode", url: "https://www.msmode.nl" },
-  { name: "Moodies", url: "https://www.moodies.nl" },
+  { name: "Moodies", url: "https://moodiesundies.com" },
   { name: "Maicos Automotive", url: "https://www.maicos.nl" },
-  { name: "B&B Designs", url: "https://www.bb-designs.nl" },
+  { name: "B&B Designs", url: "https://www.benbdesigns.nl/" },
   { name: "Speezys", url: "https://www.speezys.com" },
 ];
 
@@ -15,7 +15,7 @@ export default function LinksPage() {
         </h1>
       </section>
 
-      <section className="max-w-2xl mx-auto px-6 pb-24 lg:pl-24">
+      <section className="max-w-2xl mx-auto px-6 pb-24">
         <div className="space-y-4">
           {partnerLinks.map((link) => (
             <a

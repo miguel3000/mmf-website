@@ -34,7 +34,7 @@ export default async function GalleryPage({ params }: Props) {
         </p>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 pb-24 lg:pl-24">
+      <section className="max-w-6xl mx-auto px-6 pb-24">
         {gallery.images.length > 0 ? (
           <ImageGrid images={gallery.images} />
         ) : (

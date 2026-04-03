@@ -5,7 +5,7 @@ export default function VerticalLogo() {
     <>
       {/* Desktop: fixed left logo column, fully visible like the invoice */}
       <div
-        className="hidden lg:flex fixed left-0 top-0 h-screen w-[80px] items-center justify-center z-40 pointer-events-none bg-white"
+        className="hidden lg:flex fixed left-0 top-0 h-screen w-[80px] items-center justify-center z-0 pointer-events-none"
         aria-hidden="true"
       >
         <span
