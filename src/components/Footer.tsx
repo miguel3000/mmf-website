@@ -9,7 +9,7 @@ export default function Footer() {
               MICHIEL MAESSEN FOTOGRAFIE
             </h3>
             <p className="text-white/50 text-sm">
-              Mekelenkamplaan 13, 5345GL Oss
+              Oss
             </p>
           </div>
 

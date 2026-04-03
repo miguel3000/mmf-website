@@ -5,9 +5,9 @@ import { galleries } from "@/lib/gallery-data";
 const categories = [
   { slug: "festival", label: "FESTIVAL", description: "Evenementen en festivals", heroImage: "/images/festival/Michiel Maessen Fotografie - Hip Hop In Je Smoel - 9.jpg" },
   { slug: "auto", label: "AUTO", description: "B&B Designs", heroImage: "/images/auto/Michiel Maessen Fotografie - Audi -Stuur.jpg" },
-  { slug: "model", label: "MODEL", description: "Modelfotografie" },
-  { slug: "webshop", label: "WEBSHOP", description: "Webshop fotografie" },
-  { slug: "vrij-werk", label: "VRIJ WERK", description: "Persoonlijke projecten" },
+  { slug: "model", label: "MODEL", description: "Modelfotografie", heroImage: "/images/model/Michiel Maessen Fotografie - Model - 13.jpg" },
+  { slug: "webshop", label: "WEBSHOP", description: "Webshop fotografie", heroImage: "/images/webshop/Michiel Maessen Fotografie - Muifel - 2.jpg" },
+  { slug: "vrij-werk", label: "VRIJ WERK", description: "Persoonlijke projecten", heroImage: "/images/vrij-werk/Michiel Maessen Fotografie - VRIJWERK - 8.jpg" },
 ];
 
 export default function PortfolioPage() {
