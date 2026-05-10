@@ -17,7 +17,12 @@ function getRecipes() {
       name: f.replace(/\.pdf$/, ""),
       file: f,
     }))
-    .sort((a, b) => a.name.localeCompare(b.name, "nl"));
+    .sort((a, b) =>
+      a.name.replace(/^[^a-zA-Z]+/, "").localeCompare(
+        b.name.replace(/^[^a-zA-Z]+/, ""),
+        "nl"
+      )
+    );
 }
 
 export default function ReceptenPage() {
