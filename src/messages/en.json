@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Michiel Maessen Photography",
+    "description": "Professional photography in Oss, Den Bosch, Nijmegen and surroundings. Model, product, webshop and event photography."
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "links": "Links"
+  },
+  "common": {
+    "openMenu": "Open menu",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "backToPortfolio": "Portfolio",
+    "photosComingSoon": "Photos will be added soon."
+  },
+  "home": {
+    "title": "THE TEAM",
+    "subtitle": "Three Michiels. One mission. Images that stick."
+  },
+  "team": {
+    "michiel1": {
+      "role": "The Bookkeeper",
+      "description": "Keeps the paperwork in order. Loves stargazing and sudoku. No invoices without him, and no coffee without invoices."
+    },
+    "michiel2": {
+      "role": "The Photographer",
+      "description": "Founder with over 20 years of experience. Technically skilled and passionate. Can't stop clicking."
+    },
+    "michiel3": {
+      "role": "The Retoucher",
+      "description": "Team member since 2008. Perfectionist who checks every pixel. Runs on coffee and deadlines."
+    },
+    "skills": {
+      "coffee": "Coffee",
+      "fun": "Good vibes",
+      "motivation": "Motivation"
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "phone": {
+      "title": "CALL",
+      "description": "Tap here to call me (works best on your phone)."
+    },
+    "email": {
+      "title": "EMAIL",
+      "description": "Send me a message, I'd love to hear from you!"
+    },
+    "location": {
+      "title": "LOCATION",
+      "description": "Headquarters in Oss",
+      "serviceAreas": "Working in: Oss, Den Bosch, Nijmegen, Uden, Eindhoven, Utrecht and Breda"
+    }
+  },
+  "portfolio": {
+    "title": "PORTFOLIO",
+    "categories": {
+      "festival": { "label": "FESTIVAL", "description": "Events and festivals" },
+      "auto": { "label": "AUTO", "description": "Automotive" },
+      "model": { "label": "MODEL", "description": "Model photography" },
+      "webshop": { "label": "WEBSHOP", "description": "Webshop photography" },
+      "vrij-werk": { "label": "FREE WORK", "description": "Personal projects" }
+    }
+  },
+  "gallery": {
+    "festival": {
+      "title": "FESTIVAL",
+      "description": "HipHop in je Smoel. Amazing people. They asked me to shoot some performances at Paaspop for their articles. Couldn't say no. Turned out great."
+    },
+    "auto": {
+      "title": "AUTO",
+      "description": "Automotive photography in collaboration with B&B Designs."
+    },
+    "model": {
+      "title": "MODEL",
+      "description": "Shot for MsMode among others. In collaboration with stylist Iris and models: Lottie, Sharon, Fenna, Astrid, Marjolein, Isadee, Diante and Ziarah."
+    },
+    "webshop": {
+      "title": "WEBSHOP PHOTOGRAPHY",
+      "description": "Professional product photography for webshops and online catalogs."
+    },
+    "vrij-werk": {
+      "title": "FREE WORK",
+      "description": "Personal work shot with Sacha Mekel at Studio Van Soest in Rotterdam. Great day with amazing results."
+    }
+  },
+  "footer": {
+    "contact": "CONTACT",
+    "serviceArea": "SERVICE AREA",
+    "serviceAreaText": "Photographer Oss · Den Bosch · Nijmegen · Uden · Eindhoven · Utrecht · Breda"
+  },
+  "links": {
+    "title": "LINKS"
+  }
+}

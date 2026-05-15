@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 const partnerLinks = [
   { name: "MsMode", url: "https://www.msmode.nl" },
   { name: "Moodies", url: "https://moodiesundies.com" },
@@ -9,11 +11,13 @@ const partnerLinks = [
 ];
 
 export default function LinksPage() {
+  const t = useTranslations("links");
+
   return (
     <div className="relative z-10">
       <section className="min-h-[30vh] flex items-center justify-center px-6 pt-24 pb-8">
         <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary">
-          LINKS
+          {t("title")}
         </h1>
       </section>
 
