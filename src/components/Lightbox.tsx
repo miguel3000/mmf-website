@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 interface LightboxProps {
   images: { src: string; alt: string }[];
@@ -16,6 +17,8 @@ export default function Lightbox({
   onClose,
   onNavigate,
 }: LightboxProps) {
+  const t = useTranslations("common");
+
   const goNext = useCallback(() => {
     onNavigate((currentIndex + 1) % images.length);
   }, [currentIndex, images.length, onNavigate]);
@@ -40,29 +43,26 @@ export default function Lightbox({
 
   return (
     <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center">
-      {/* Close button */}
       <button
         onClick={onClose}
         className="absolute top-6 right-6 text-white/60 hover:text-white transition-colors"
-        aria-label="Sluiten"
+        aria-label={t("close")}
       >
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
 
-      {/* Previous */}
       <button
         onClick={goPrev}
         className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors p-2"
-        aria-label="Vorige"
+        aria-label={t("previous")}
       >
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
-      {/* Image */}
       <div className="relative w-full h-full max-w-5xl max-h-[85vh] mx-16">
         <Image
           src={images[currentIndex].src}
@@ -74,18 +74,16 @@ export default function Lightbox({
         />
       </div>
 
-      {/* Next */}
       <button
         onClick={goNext}
         className="absolute right-4 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors p-2"
-        aria-label="Volgende"
+        aria-label={t("next")}
       >
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
-      {/* Counter */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/40 text-sm">
         {currentIndex + 1} / {images.length}
       </div>

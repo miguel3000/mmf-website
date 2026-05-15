@@ -1,19 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Contact", href: "/contact" },
-  { label: "Links", href: "/links" },
-];
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslations();
 
-  // Prevent body scroll when menu is open
+  const navLinks = [
+    { label: t("nav.home"), href: "/" as const },
+    { label: t("nav.portfolio"), href: "/portfolio" as const },
+    { label: t("nav.contact"), href: "/contact" as const },
+    { label: t("nav.links"), href: "/links" as const },
+  ];
+
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -27,11 +28,10 @@ export default function Header() {
 
   return (
     <>
-      {/* Hamburger button — top right, always visible */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         className="fixed top-6 right-6 z-50 p-2 rounded-lg hover:bg-surface transition-colors"
-        aria-label="Menu openen"
+        aria-label={t("common.openMenu")}
       >
         <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           {menuOpen ? (
@@ -42,7 +42,6 @@ export default function Header() {
         </svg>
       </button>
 
-      {/* Full-screen overlay menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-40 bg-white flex items-center justify-center">
           <nav className="flex flex-col items-center gap-8">
