@@ -18,3 +18,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Konami code Easter egg */
+.konami-active main {
+  filter: url(#pixelate);
+  transition: filter 0.3s ease-in;
+}
+
+.konami-active header,
+.konami-active footer {
+  filter: url(#pixelate);
+  transition: filter 0.3s ease-in;
+}
+
+.konami-close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+  filter: url(#pixelate);
+}

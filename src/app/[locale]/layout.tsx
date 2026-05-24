@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VerticalLogo from "@/components/VerticalLogo";
 import LanguageToggle from "@/components/LanguageToggle";
+import KonamiCode from "@/components/KonamiCode";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} ${bebasNeue.variable}`}>
       <body className="antialiased font-sans bg-white text-primary">
         <NextIntlClientProvider messages={messages}>
+          <KonamiCode />
           <VerticalLogo />
           <Header />
           <LanguageToggle />
