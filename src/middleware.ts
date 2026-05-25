@@ -6,12 +6,21 @@ const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const lower = pathname.toLowerCase();
 
-  // Redirect /CHAOS or /Chaos (any case) to /chaos
-  if (pathname.toLowerCase() === "/chaos" && pathname !== "/chaos") {
-    const url = request.nextUrl.clone();
-    url.pathname = "/chaos";
-    return NextResponse.redirect(url, 301);
+  // /chaos any casing — redirect uppercase variants, skip i18n for exact
+  if (lower === "/chaos") {
+    if (pathname !== "/chaos") {
+      const url = request.nextUrl.clone();
+      url.pathname = "/chaos";
+      return NextResponse.redirect(url, 302);
+    }
+    return NextResponse.next();
+  }
+
+  // Skip i18n for /recepten
+  if (lower.startsWith("/recepten")) {
+    return NextResponse.next();
   }
 
   return intlMiddleware(request);
@@ -21,6 +30,6 @@ export const config = {
   matcher: [
     "/",
     "/(nl|en)/:path*",
-    "/((?!_next|images|recepten|chaos|favicon.ico|api).*)",
+    "/((?!_next|images|favicon.ico|api).*)",
   ],
 };
