@@ -4,9 +4,8 @@ import type { Metadata } from "next";
 import RecipeList from "./RecipeList";
 
 export const metadata: Metadata = {
-  title: "Recepten - a la Damaris",
-  description:
-    "Receptenverzameling van restaurant a la Damaris. Mediterrane en Midden-Oosterse keuken.",
+  title: "Recepten",
+  description: "Receptenverzameling. Mediterrane en Midden-Oosterse keuken.",
 };
 
 function getRecipes() {
@@ -35,9 +34,7 @@ export default function ReceptenPage() {
           RECEPTEN
         </h1>
         <p className="mt-3 text-secondary text-sm">
-          Receptenverzameling van{" "}
-          <span className="italic">a la Damaris</span> — {recipes.length}{" "}
-          recepten
+          Receptenverzameling — {recipes.length} recepten
         </p>
       </section>
 
