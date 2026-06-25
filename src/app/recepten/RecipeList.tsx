@@ -1,18 +1,48 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 interface Recipe {
   name: string;
   file: string;
+  category: string;
 }
+
+const CATEGORY_ORDER = [
+  "Alles",
+  "Hoofdgerecht",
+  "Bijgerecht",
+  "Soep",
+  "Salade",
+  "Saus & Dip",
+  "Snack",
+  "Brood",
+  "Dessert",
+  "Ontbijt",
+  "Drank",
+  "Conserveren",
+];
 
 export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
   const [search, setSearch] = useState("");
+  const [activeCategory, setActiveCategory] = useState("Alles");
 
-  const filtered = recipes.filter((r) =>
-    r.name.toLowerCase().includes(search.toLowerCase())
-  );
+  // Only show categories that have recipes
+  const availableCategories = useMemo(() => {
+    const cats = new Set(recipes.map((r) => r.category));
+    return CATEGORY_ORDER.filter((c) => c === "Alles" || cats.has(c));
+  }, [recipes]);
+
+  const filtered = useMemo(() => {
+    return recipes.filter((r) => {
+      const matchesSearch = r.name
+        .toLowerCase()
+        .includes(search.toLowerCase());
+      const matchesCategory =
+        activeCategory === "Alles" || r.category === activeCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [recipes, search, activeCategory]);
 
   return (
     <section className="max-w-2xl mx-auto px-6 pb-20">
@@ -24,8 +54,37 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
           placeholder="Zoek een recept..."
           className="w-full px-4 py-2.5 border border-border rounded-lg text-sm text-primary placeholder:text-muted focus:outline-none focus:border-secondary transition-colors"
         />
+
+        {/* Category filter chips */}
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {availableCategories.map((cat) => {
+            const isActive = activeCategory === cat;
+            const count =
+              cat === "Alles"
+                ? recipes.length
+                : recipes.filter((r) => r.category === cat).length;
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-3 py-1 rounded-full text-xs transition-colors ${
+                  isActive
+                    ? "bg-primary text-white"
+                    : "bg-gray-100 text-muted hover:bg-gray-200 hover:text-primary"
+                }`}
+              >
+                {cat}{" "}
+                <span className={isActive ? "text-white/70" : "text-muted/60"}>
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
         <p className="mt-2 text-xs text-muted">
           {filtered.length} {filtered.length === 1 ? "recept" : "recepten"}
+          {activeCategory !== "Alles" && ` in ${activeCategory}`}
         </p>
       </div>
 
@@ -38,9 +97,11 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
               rel="noopener noreferrer"
               className="flex items-center justify-between py-3 group"
             >
-              <span className="text-sm text-primary group-hover:text-secondary transition-colors">
-                {recipe.name}
-              </span>
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="text-sm text-primary group-hover:text-secondary transition-colors truncate">
+                  {recipe.name}
+                </span>
+              </div>
               <svg
                 className="w-4 h-4 text-muted group-hover:text-secondary transition-colors shrink-0 ml-4"
                 fill="none"
