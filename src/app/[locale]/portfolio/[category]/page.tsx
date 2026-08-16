@@ -30,14 +30,14 @@ function GalleryContent({ category }: { category: string }) {
       <section className="min-h-[30vh] flex flex-col items-center justify-center px-6 pt-24 pb-8">
         <Link
           href="/portfolio"
-          className="text-muted text-sm hover:text-primary transition-colors mb-4"
+          className="text-muted dark:text-white/40 text-sm hover:text-primary dark:hover:text-white/80 transition-colors mb-4"
         >
           &larr; {t("common.backToPortfolio")}
         </Link>
-        <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary">
+        <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary dark:text-white/90">
           {t(`gallery.${category}.title`)}
         </h1>
-        <p className="mt-4 text-secondary max-w-2xl text-center">
+        <p className="mt-4 text-secondary dark:text-white/50 max-w-2xl text-center">
           {t(`gallery.${category}.description`)}
         </p>
       </section>
@@ -46,7 +46,7 @@ function GalleryContent({ category }: { category: string }) {
         {images.length > 0 ? (
           <ImageGrid images={images} />
         ) : (
-          <p className="text-muted text-center py-12">
+          <p className="text-muted dark:text-white/40 text-center py-12">
             {t("common.photosComingSoon")}
           </p>
         )}

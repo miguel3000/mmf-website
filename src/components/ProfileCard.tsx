@@ -21,7 +21,7 @@ export default function ProfileCard({
   skills,
 }: ProfileCardProps) {
   return (
-    <div className="bg-white border border-border rounded-lg overflow-hidden">
+    <div className="bg-white dark:bg-surface-dark border border-border dark:border-border-dark rounded-lg overflow-hidden">
       <div className="aspect-[3/4] relative">
         <Image
           src={imageSrc}
@@ -31,25 +31,25 @@ export default function ProfileCard({
         />
       </div>
       <div className="p-6">
-        <h2 className="font-heading text-3xl tracking-wider text-primary">
+        <h2 className="font-heading text-3xl tracking-wider text-primary dark:text-white/90">
           {name}
         </h2>
-        <p className="text-secondary text-sm uppercase tracking-wider mt-1 mb-4">
+        <p className="text-secondary dark:text-white/50 text-sm uppercase tracking-wider mt-1 mb-4">
           {role}
         </p>
-        <p className="text-secondary text-sm leading-relaxed mb-6">
+        <p className="text-secondary dark:text-white/50 text-sm leading-relaxed mb-6">
           {description}
         </p>
         <div className="space-y-3">
           {skills.map((skill) => (
             <div key={skill.label}>
-              <div className="flex justify-between text-xs text-muted mb-1">
+              <div className="flex justify-between text-xs text-muted dark:text-white/40 mb-1">
                 <span>{skill.label}</span>
                 <span>{skill.percentage}%</span>
               </div>
-              <div className="h-1.5 bg-surface rounded-full overflow-hidden">
+              <div className="h-1.5 bg-surface dark:bg-white/10 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-primary rounded-full transition-all duration-500"
+                  className="h-full bg-primary dark:bg-white/70 rounded-full transition-all duration-500"
                   style={{ width: `${skill.percentage}%` }}
                 />
               </div>

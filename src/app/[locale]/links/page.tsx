@@ -16,7 +16,7 @@ export default function LinksPage() {
   return (
     <div className="relative z-10">
       <section className="min-h-[30vh] flex items-center justify-center px-6 pt-24 pb-8">
-        <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary">
+        <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary dark:text-white/90">
           {t("title")}
         </h1>
       </section>
@@ -29,9 +29,9 @@ export default function LinksPage() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block border border-border p-6 hover:bg-surface transition-colors group"
+              className="block border border-border dark:border-border-dark p-6 hover:bg-surface dark:hover:bg-surface-dark transition-colors group"
             >
-              <span className="font-heading text-2xl tracking-wider text-primary group-hover:text-secondary transition-colors">
+              <span className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 group-hover:text-secondary dark:group-hover:text-white/60 transition-colors">
                 {link.name}
               </span>
             </a>

@@ -9,7 +9,7 @@ export default function VerticalLogo() {
         aria-hidden="true"
       >
         <span
-          className="font-heading text-primary text-[3.5rem] leading-none tracking-[0.2em] whitespace-nowrap"
+          className="font-heading text-primary dark:text-white/80 text-[3.5rem] leading-none tracking-[0.2em] whitespace-nowrap"
           style={{
             writingMode: "vertical-rl",
             textOrientation: "mixed",
@@ -26,7 +26,7 @@ export default function VerticalLogo() {
         aria-hidden="true"
       >
         <span
-          className="font-heading text-primary/[0.06] text-[20vw] leading-none tracking-[0.1em] whitespace-nowrap"
+          className="font-heading text-primary/[0.06] dark:text-white/[0.04] text-[20vw] leading-none tracking-[0.1em] whitespace-nowrap"
           style={{
             writingMode: "vertical-rl",
             textOrientation: "mixed",

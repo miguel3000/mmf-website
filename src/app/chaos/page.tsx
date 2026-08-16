@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function ChaosPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-bg-dark">
       <div className="max-w-lg mx-auto px-6 py-12">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="font-heading text-6xl sm:text-7xl tracking-wider text-primary">
+          <h1 className="font-heading text-6xl sm:text-7xl tracking-wider text-primary dark:text-white/90">
             CHAOS
           </h1>
-          <p className="mt-2 text-lg text-secondary">
+          <p className="mt-2 text-lg text-secondary dark:text-white/50">
             Als je dit leest, ben ik waarschijnlijk weggelopen 🐾
           </p>
         </div>
 
         {/* Photos */}
-        <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-surface">
+        <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-surface dark:bg-surface-dark">
           <Image
             src="/images/chaos/chaos-3.jpg"
             alt="Chaos van dichtbij — blauwe ogen, bruine vacht, leren halsband"
@@ -25,7 +25,7 @@ export default function ChaosPage() {
           />
         </div>
         <div className="grid grid-cols-2 gap-4 mb-8">
-          <div className="relative aspect-square rounded-xl overflow-hidden bg-surface">
+          <div className="relative aspect-square rounded-xl overflow-hidden bg-surface dark:bg-surface-dark">
             <Image
               src="/images/chaos/chaos-1.jpg"
               alt="Chaos loopt door het bos"
@@ -33,7 +33,7 @@ export default function ChaosPage() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-square rounded-xl overflow-hidden bg-surface">
+          <div className="relative aspect-square rounded-xl overflow-hidden bg-surface dark:bg-surface-dark">
             <Image
               src="/images/chaos/chaos-2.jpg"
               alt="Chaos ligt op de bank in de tuin"
@@ -44,27 +44,27 @@ export default function ChaosPage() {
         </div>
 
         {/* Info card */}
-        <div className="bg-surface rounded-2xl p-6 mb-6 space-y-4">
-          <h2 className="font-heading text-2xl tracking-wide text-primary">
+        <div className="bg-surface dark:bg-surface-dark rounded-2xl p-6 mb-6 space-y-4">
+          <h2 className="font-heading text-2xl tracking-wide text-primary dark:text-white/90">
             OVER MIJ
           </h2>
 
           <dl className="space-y-3 text-sm">
-            <div className="flex justify-between border-b border-border pb-2">
-              <dt className="text-muted font-medium">Naam</dt>
-              <dd className="text-primary font-semibold">Chaos</dd>
+            <div className="flex justify-between border-b border-border dark:border-border-dark pb-2">
+              <dt className="text-muted dark:text-white/40 font-medium">Naam</dt>
+              <dd className="text-primary dark:text-white/90 font-semibold">Chaos</dd>
             </div>
-            <div className="flex justify-between border-b border-border pb-2">
-              <dt className="text-muted font-medium">Ras</dt>
-              <dd className="text-primary">Husky / Retriever / Duitse Herder</dd>
+            <div className="flex justify-between border-b border-border dark:border-border-dark pb-2">
+              <dt className="text-muted dark:text-white/40 font-medium">Ras</dt>
+              <dd className="text-primary dark:text-white/90">Husky / Retriever / Duitse Herder</dd>
             </div>
-            <div className="flex justify-between border-b border-border pb-2">
-              <dt className="text-muted font-medium">Ogen</dt>
-              <dd className="text-primary">Blauw</dd>
+            <div className="flex justify-between border-b border-border dark:border-border-dark pb-2">
+              <dt className="text-muted dark:text-white/40 font-medium">Ogen</dt>
+              <dd className="text-primary dark:text-white/90">Blauw</dd>
             </div>
-            <div className="flex justify-between border-b border-border pb-2">
-              <dt className="text-muted font-medium">Chip</dt>
-              <dd className="text-primary">
+            <div className="flex justify-between border-b border-border dark:border-border-dark pb-2">
+              <dt className="text-muted dark:text-white/40 font-medium">Chip</dt>
+              <dd className="text-primary dark:text-white/90">
                 Ja — achter in de nek, bovenaan
               </dd>
             </div>
@@ -72,11 +72,11 @@ export default function ChaosPage() {
         </div>
 
         {/* Fun fact */}
-        <div className="bg-surface rounded-2xl p-6 mb-6">
-          <h2 className="font-heading text-2xl tracking-wide text-primary mb-2">
+        <div className="bg-surface dark:bg-surface-dark rounded-2xl p-6 mb-6">
+          <h2 className="font-heading text-2xl tracking-wide text-primary dark:text-white/90 mb-2">
             LEUK WEETJE
           </h2>
-          <p className="text-secondary text-sm">
+          <p className="text-secondary dark:text-white/50 text-sm">
             Als je je vinger omhoog steekt terwijl je hem aankijkt, gaat hij
             zitten. Handig als hij niet wil luisteren! 😄
           </p>
@@ -84,12 +84,12 @@ export default function ChaosPage() {
 
         {/* Call to action */}
         <div className="text-center space-y-4">
-          <p className="text-secondary">
+          <p className="text-secondary dark:text-white/50">
             Heb je mij gevonden? Bel mijn baasje:
           </p>
           <a
             href="tel:+31653117778"
-            className="inline-flex items-center gap-3 bg-primary text-white font-heading text-2xl tracking-wider px-8 py-4 rounded-full hover:bg-secondary transition-colors"
+            className="inline-flex items-center gap-3 bg-primary dark:bg-white text-white dark:text-bg-dark font-heading text-2xl tracking-wider px-8 py-4 rounded-full hover:bg-secondary dark:hover:bg-white/80 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function ChaosPage() {
             </svg>
             BEL OF APP 06 53 11 77 78
           </a>
-          <p className="text-muted text-xs mt-4">
+          <p className="text-muted dark:text-white/30 text-xs mt-4">
             Alvast heel erg bedankt! 🙏
           </p>
         </div>

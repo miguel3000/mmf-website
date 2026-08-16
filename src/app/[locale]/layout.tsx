@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VerticalLogo from "@/components/VerticalLogo";
 import LanguageToggle from "@/components/LanguageToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 import KonamiCode from "@/components/KonamiCode";
 import "../globals.css";
 
@@ -57,12 +58,16 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${bebasNeue.variable}`}>
-      <body className="antialiased font-sans bg-white text-primary">
+    <html lang={locale} className={`${inter.variable} ${bebasNeue.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')}catch(e){}})()` }} />
+      </head>
+      <body className="antialiased font-sans bg-white dark:bg-bg-dark text-primary dark:text-white/90 transition-colors">
         <NextIntlClientProvider messages={messages}>
           <KonamiCode />
           <VerticalLogo />
           <Header />
+          <ThemeToggle />
           <LanguageToggle />
           <main className="lg:ml-[80px]">{children}</main>
           <Footer />

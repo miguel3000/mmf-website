@@ -18,20 +18,20 @@ export default function LanguageToggle() {
         onClick={() => switchLocale("nl")}
         className={`px-1.5 py-0.5 transition-colors ${
           locale === "nl"
-            ? "text-primary"
-            : "text-muted hover:text-secondary"
+            ? "text-primary dark:text-white/90"
+            : "text-muted dark:text-white/40 hover:text-secondary dark:hover:text-white/70"
         }`}
         aria-label="Nederlands"
       >
         NL
       </button>
-      <span className="text-muted">|</span>
+      <span className="text-muted dark:text-white/30">|</span>
       <button
         onClick={() => switchLocale("en")}
         className={`px-1.5 py-0.5 transition-colors ${
           locale === "en"
-            ? "text-primary"
-            : "text-muted hover:text-secondary"
+            ? "text-primary dark:text-white/90"
+            : "text-muted dark:text-white/40 hover:text-secondary dark:hover:text-white/70"
         }`}
         aria-label="English"
       >

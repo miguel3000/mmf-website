@@ -30,10 +30,10 @@ export default function Header() {
     <>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="fixed top-6 right-6 z-50 p-2 rounded-lg hover:bg-surface transition-colors"
+        className="fixed top-6 right-6 z-50 p-2 rounded-lg hover:bg-surface dark:hover:bg-surface-dark transition-colors"
         aria-label={t("common.openMenu")}
       >
-        <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-8 h-8 text-primary dark:text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           {menuOpen ? (
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           ) : (
@@ -43,14 +43,14 @@ export default function Header() {
       </button>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-white flex items-center justify-center">
+        <div className="fixed inset-0 z-40 bg-white dark:bg-bg-dark flex items-center justify-center">
           <nav className="flex flex-col items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="font-heading text-4xl sm:text-5xl text-primary hover:text-secondary transition-colors tracking-wider"
+                className="font-heading text-4xl sm:text-5xl text-primary dark:text-white/90 hover:text-secondary dark:hover:text-white/60 transition-colors tracking-wider"
               >
                 {link.label}
               </Link>

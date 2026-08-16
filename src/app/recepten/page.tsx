@@ -38,10 +38,10 @@ export default function ReceptenPage() {
   return (
     <div className="min-h-screen">
       <section className="max-w-2xl mx-auto px-6 pt-28 pb-6 text-center">
-        <h1 className="font-heading text-5xl sm:text-6xl tracking-wider text-primary">
+        <h1 className="font-heading text-5xl sm:text-6xl tracking-wider text-primary dark:text-white/90">
           RECEPTEN
         </h1>
-        <p className="mt-3 text-secondary text-sm">
+        <p className="mt-3 text-secondary dark:text-white/50 text-sm">
           Receptenverzameling — {recipes.length} recepten
         </p>
       </section>

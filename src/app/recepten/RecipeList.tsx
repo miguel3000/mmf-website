@@ -46,13 +46,13 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
 
   return (
     <section className="max-w-2xl mx-auto px-6 pb-20">
-      <div className="sticky top-0 z-10 bg-white pt-4 pb-3">
+      <div className="sticky top-0 z-10 bg-white dark:bg-bg-dark pt-4 pb-3">
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Zoek een recept..."
-          className="w-full px-4 py-2.5 border border-border rounded-lg text-sm text-primary placeholder:text-muted focus:outline-none focus:border-secondary transition-colors"
+          className="w-full px-4 py-2.5 border border-border dark:border-border-dark rounded-lg text-sm text-primary dark:text-white/90 bg-white dark:bg-surface-dark placeholder:text-muted dark:placeholder:text-white/30 focus:outline-none focus:border-secondary dark:focus:border-white/40 transition-colors"
         />
 
         {/* Category filter chips */}
@@ -69,12 +69,12 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-3 py-1 rounded-full text-xs transition-colors ${
                   isActive
-                    ? "bg-primary text-white"
-                    : "bg-gray-100 text-muted hover:bg-gray-200 hover:text-primary"
+                    ? "bg-primary dark:bg-white text-white dark:text-bg-dark"
+                    : "bg-gray-100 dark:bg-surface-dark text-muted dark:text-white/40 hover:bg-gray-200 dark:hover:bg-white/10 hover:text-primary dark:hover:text-white/70"
                 }`}
               >
                 {cat}{" "}
-                <span className={isActive ? "text-white/70" : "text-muted/60"}>
+                <span className={isActive ? "text-white/70 dark:text-bg-dark/60" : "text-muted/60 dark:text-white/20"}>
                   {count}
                 </span>
               </button>
@@ -82,13 +82,13 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
           })}
         </div>
 
-        <p className="mt-2 text-xs text-muted">
+        <p className="mt-2 text-xs text-muted dark:text-white/30">
           {filtered.length} {filtered.length === 1 ? "recept" : "recepten"}
           {activeCategory !== "Alles" && ` in ${activeCategory}`}
         </p>
       </div>
 
-      <ul className="mt-2 divide-y divide-border">
+      <ul className="mt-2 divide-y divide-border dark:divide-border-dark">
         {filtered.map((recipe) => (
           <li key={recipe.file}>
             <a
@@ -98,12 +98,12 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
               className="flex items-center justify-between py-3 group"
             >
               <div className="flex items-center gap-2 min-w-0">
-                <span className="text-sm text-primary group-hover:text-secondary transition-colors truncate">
+                <span className="text-sm text-primary dark:text-white/90 group-hover:text-secondary dark:group-hover:text-white/60 transition-colors truncate">
                   {recipe.name}
                 </span>
               </div>
               <svg
-                className="w-4 h-4 text-muted group-hover:text-secondary transition-colors shrink-0 ml-4"
+                className="w-4 h-4 text-muted dark:text-white/30 group-hover:text-secondary dark:group-hover:text-white/60 transition-colors shrink-0 ml-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -121,7 +121,7 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
       </ul>
 
       {filtered.length === 0 && (
-        <p className="text-center text-muted text-sm mt-8">
+        <p className="text-center text-muted dark:text-white/30 text-sm mt-8">
           Geen recepten gevonden.
         </p>
       )}
