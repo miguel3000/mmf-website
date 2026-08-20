@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -18,18 +19,12 @@ export default function Footer() {
             <h4 className="font-heading text-lg tracking-wider text-white/40 mb-3">
               {t("contact")}
             </h4>
-            <ul className="space-y-2 text-sm text-white/60">
-              <li>
-                <a href="tel:+31653117778" className="hover:text-white transition-colors">
-                  +31 6 53117778
-                </a>
-              </li>
-              <li>
-                <a href="mailto:website@michielmaessen.com" className="hover:text-white transition-colors">
-                  website@michielmaessen.com
-                </a>
-              </li>
-            </ul>
+            <Link
+              href="/contact"
+              className="text-sm text-white/60 hover:text-white transition-colors"
+            >
+              {t("contactLink")}
+            </Link>
           </div>
 
           <div>

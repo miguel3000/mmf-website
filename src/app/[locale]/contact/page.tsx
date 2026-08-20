@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import ContactForm from "@/components/ContactForm";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -12,48 +13,22 @@ export default function ContactPage() {
       </section>
 
       <section className="max-w-2xl mx-auto px-6 pb-24">
-        <div className="space-y-8">
-          <div className="border-b border-border dark:border-border-dark pb-6">
-            <h2 className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 mb-2">
-              {t("phone.title")}
-            </h2>
-            <p className="text-secondary dark:text-white/50 text-sm mb-3">
-              {t("phone.description")}
-            </p>
-            <a
-              href="tel:+31653117778"
-              className="text-primary dark:text-white/90 text-lg font-medium hover:text-secondary dark:hover:text-white/60 transition-colors"
-            >
-              +31 6 53117778
-            </a>
-          </div>
+        <p className="text-secondary dark:text-white/50 text-sm mb-8">
+          {t("subtitle")}
+        </p>
 
-          <div className="border-b border-border dark:border-border-dark pb-6">
-            <h2 className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 mb-2">
-              {t("email.title")}
-            </h2>
-            <p className="text-secondary dark:text-white/50 text-sm mb-3">
-              {t("email.description")}
-            </p>
-            <a
-              href="mailto:website@michielmaessen.com"
-              className="text-primary dark:text-white/90 text-lg font-medium hover:text-secondary dark:hover:text-white/60 transition-colors"
-            >
-              website@michielmaessen.com
-            </a>
-          </div>
+        <ContactForm />
 
-          <div>
-            <h2 className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 mb-2">
-              {t("location.title")}
-            </h2>
-            <p className="text-secondary dark:text-white/50 text-sm mb-3">
-              {t("location.description")}
-            </p>
-            <p className="text-secondary dark:text-white/50 text-sm leading-relaxed">
-              {t("location.serviceAreas")}
-            </p>
-          </div>
+        <div className="mt-16 pt-8 border-t border-border dark:border-border-dark">
+          <h2 className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 mb-2">
+            {t("location.title")}
+          </h2>
+          <p className="text-secondary dark:text-white/50 text-sm mb-3">
+            {t("location.description")}
+          </p>
+          <p className="text-secondary dark:text-white/50 text-sm leading-relaxed">
+            {t("location.serviceAreas")}
+          </p>
         </div>
       </section>
     </div>

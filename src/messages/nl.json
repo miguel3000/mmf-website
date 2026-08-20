@@ -42,13 +42,14 @@
   },
   "contact": {
     "title": "CONTACT",
-    "phone": {
-      "title": "BELLEN",
-      "description": "Klik hier om mij te bellen (werkt het beste met je mobiel)."
-    },
-    "email": {
-      "title": "MAILEN",
-      "description": "Stuur mij een berichtje, vind ik leuk!"
+    "subtitle": "Heb je een vraag of wil je een shoot boeken? Vul het formulier in en ik neem zo snel mogelijk contact met je op.",
+    "form": {
+      "name": "Naam",
+      "email": "E-mailadres",
+      "message": "Bericht",
+      "submit": "Versturen",
+      "success": "Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.",
+      "error": "Er ging iets mis. Probeer het later nog eens."
     },
     "location": {
       "title": "LOCATIE",
@@ -90,6 +91,7 @@
   },
   "footer": {
     "contact": "CONTACT",
+    "contactLink": "Neem contact op →",
     "serviceArea": "WERKGEBIED",
     "serviceAreaText": "Fotograaf Oss · Den Bosch · Nijmegen · Uden · Eindhoven · Utrecht · Breda · Amsterdam · Rotterdam · Deventer · Groningen en de rest van Nederland"
   },
