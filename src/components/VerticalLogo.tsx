@@ -5,11 +5,11 @@ export default function VerticalLogo() {
     <>
       {/* Desktop: fixed left logo column, fully visible like the invoice */}
       <div
-        className="hidden lg:flex fixed left-0 top-0 h-screen w-[80px] items-center justify-center z-0 pointer-events-none"
+        className="hidden lg:flex fixed left-0 top-0 h-screen w-[120px] items-center justify-center z-0 pointer-events-none overflow-hidden"
         aria-hidden="true"
       >
         <span
-          className="font-heading text-primary dark:text-white/80 text-[3.5rem] leading-none tracking-[0.2em] whitespace-nowrap"
+          className="font-heading text-primary dark:text-white/80 text-[5.5rem] leading-none tracking-[0.05em] whitespace-nowrap"
           style={{
             writingMode: "vertical-rl",
             textOrientation: "mixed",
