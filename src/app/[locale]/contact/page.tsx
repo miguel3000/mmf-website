@@ -18,18 +18,6 @@ export default function ContactPage() {
         </p>
 
         <ContactForm />
-
-        <div className="mt-16 pt-8 border-t border-border dark:border-border-dark">
-          <h2 className="font-heading text-2xl tracking-wider text-primary dark:text-white/90 mb-2">
-            {t("location.title")}
-          </h2>
-          <p className="text-secondary dark:text-white/50 text-sm mb-3">
-            {t("location.description")}
-          </p>
-          <p className="text-secondary dark:text-white/50 text-sm leading-relaxed">
-            {t("location.serviceAreas")}
-          </p>
-        </div>
       </section>
     </div>
   );
