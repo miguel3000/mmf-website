@@ -18,6 +18,16 @@ export default function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // /qr any casing — redirect uppercase variants, skip i18n for exact
+  if (lower === "/qr") {
+    if (pathname !== "/qr") {
+      const url = request.nextUrl.clone();
+      url.pathname = "/qr";
+      return NextResponse.redirect(url, 302);
+    }
+    return NextResponse.next();
+  }
+
   // Skip i18n for /recepten
   if (lower.startsWith("/recepten")) {
     return NextResponse.next();
