@@ -11,6 +11,7 @@ interface Recipe {
 const CATEGORY_ORDER = [
   "Alles",
   "Hoofdgerecht",
+  "Pizza",
   "Bijgerecht",
   "Soep",
   "Salade",
