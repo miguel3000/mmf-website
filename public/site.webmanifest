@@ -1,6 +1,8 @@
 {
   "name": "Michiel Maessen Fotografie",
   "short_name": "Recepten",
+  "start_url": "/recepten",
+  "id": "/recepten",
   "icons": [
     {
       "src": "/icon-192.png",
