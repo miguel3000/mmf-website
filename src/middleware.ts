@@ -40,6 +40,6 @@ export const config = {
   matcher: [
     "/",
     "/(nl|en)/:path*",
-    "/((?!_next|images|favicon.ico|api).*)",
+    "/((?!_next|images|favicon\\.ico|sw\\.js|site\\.webmanifest|icon-.*\\.png|apple-touch-icon\\.png|favicon-.*\\.png|api).*)",
   ],
 };
