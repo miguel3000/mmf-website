@@ -1,566 +1,2234 @@
 {
-  "'Koolrabi' à la Mediterrannée": "Bijgerecht",
-  "Aardappel-tomatensalade met gefrituurde salie": "Salade",
-  "Aardappelen met bleekselderij en venkel": "Bijgerecht",
-  "Aardappelpuree plus plus": "Bijgerecht",
-  "Aardappels uit de oven met ingelegde aubergineyoghurtsaus": "Bijgerecht",
-  "Aardpeerpuree met gefrituurde lente-ui, pijnboompitten en hazelnoten": "Bijgerecht",
-  "Aardpeerpuree met in citroenboter gebakken cavolo nero": "Bijgerecht",
-  "Abrikozencompote (of met cranberries of ander gedroogd fruit)": "Dessert",
-  "Afghaanse kruidige yoghurtsoep": "Soep",
-  "Algerijnse spinazie": "Bijgerecht",
-  "Anchovy, Oregano & Caper Pizza": "Pizza",
-  "Appel venkelsalade": "Salade",
-  "Appelkappertjes en ciabatta": "Brood",
-  "Arabisch pompoen-pimentbrood": "Brood",
-  "Arabische flespompoen uit de oven": "Bijgerecht",
-  "Arancini da Ischia": "Snack",
-  "Arnabeet Mekleh": "Bijgerecht",
-  "Artisjok citroen labneh": "Bijgerecht",
-  "Artisjok in een romige saus met gedroogde abrikoos, knoflook en tijm": "Bijgerecht",
-  "Artisjokbodems gevuld met tuinbonenpuree met citroensaus": "Bijgerecht",
-  "Artisjokharten met (ingelegde)citroen en vegan honing": "Bijgerecht",
-  "Artisjokken en aardappels uit de oven met basilicumolie": "Bijgerecht",
-  "Artisjokken met vinaigrette": "Bijgerecht",
-  "Artisjoksoep, niet normaal zò lekker": "Soep",
-  "Asperge met een wel zeer knapperige wederhelft": "Bijgerecht",
-  "Asperge met granaatappel": "Bijgerecht",
-  "Aspergehummus": "Saus & Dip",
-  "Asperges op bedje van limabonenpuree en met hazelnootpesto": "Bijgerecht",
-  "Asperges, het witte goud": "Bijgerecht",
-  "Aspergesalade met bulgur, mosterd en pisctachenoten": "Salade",
-  "Aspergesoep met piment": "Soep",
-  "Aubergine frites met granaatappelmelasse en za'atar yoghurt": "Snack",
+  "'Koolrabi' à la Mediterrannée": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aardappel-tomatensalade met gefrituurde salie": [
+    "Salade",
+    "Vegan"
+  ],
+  "Aardappelen met bleekselderij en venkel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aardappelpuree plus plus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aardappels uit de oven met ingelegde aubergineyoghurtsaus": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Aardpeerpuree met gefrituurde lente-ui, pijnboompitten en hazelnoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aardpeerpuree met in citroenboter gebakken cavolo nero": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Abrikozencompote (of met cranberries of ander gedroogd fruit)": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Afghaanse kruidige yoghurtsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Algerijnse spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Anchovy, Oregano & Caper Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "Appel venkelsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Appelkappertjes en ciabatta": [
+    "Brood",
+    "Vegan"
+  ],
+  "Arabisch pompoen-pimentbrood": [
+    "Brood",
+    "Vegan"
+  ],
+  "Arabische flespompoen uit de oven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Arancini da Ischia": [
+    "Snack",
+    "Vega"
+  ],
+  "Arnabeet Mekleh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjok citroen labneh": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Artisjok in een romige saus met gedroogde abrikoos, knoflook en tijm": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjokbodems gevuld met tuinbonenpuree met citroensaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjokharten met (ingelegde)citroen en vegan honing": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjokken en aardappels uit de oven met basilicumolie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjokken met vinaigrette": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Artisjoksoep, niet normaal zò lekker": [
+    "Soep",
+    "Vega"
+  ],
+  "Asperge met een wel zeer knapperige wederhelft": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Asperge met granaatappel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aspergehummus": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Asperges op bedje van limabonenpuree en met hazelnootpesto": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Asperges, het witte goud": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aspergesalade met bulgur, mosterd en pisctachenoten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Aspergesoep met piment": [
+    "Soep",
+    "Vegan"
+  ],
+  "Aubergine frites met granaatappelmelasse en za'atar yoghurt": [
+    "Snack",
+    "Vegan"
+  ],
   "Aubergine met Tomaten, Harissa & Amandelen": [
     "Hoofdgerecht",
     "Vegan"
   ],
-  "Aubergine rijstrolletjes met citroen tahinasaus": "Bijgerecht",
-  "Aubergine tomatendip met kurkuma en knoflook": "Bijgerecht",
-  "Aubergine venkelsoep met vleugje sinaasappel": "Soep",
-  "Aubergine walnoot topping voor op hummus": "Saus & Dip",
-  "Aubergine, tomaat, kurkuma en walnootstoof": "Hoofdgerecht",
-  "Auberginepilav": "Hoofdgerecht",
-  "Auberginesoep met ingelegde citroen en zwarte tahina": "Soep",
-  "Avocadodip met sumac en sesamzaadjes": "Bijgerecht",
-  "Baba ganoush": "Saus & Dip",
-  "Baba ganoush salade": "Salade",
-  "Baby-Uitjes in Tamarinde": "Bijgerecht",
-  "Batata hara à la Siham": "Bijgerecht",
-  "Batata in korianderzaad en rode wijn": "Bijgerecht",
-  "Batata in tomatensaus met Libanese zevenkruiden": "Bijgerecht",
-  "Batata à la Abu Julia": "Bijgerecht",
-  "Bedje van misoyoghurt, aubergine en knapperige en pittige panko": "Bijgerecht",
-  "Begraven in Vermicelli": "Bijgerecht",
-  "Bietenrisotto": "Hoofdgerecht",
-  "Bietensalade met karwij en walnoten": "Salade",
-  "Bigos - Poolse zuurkool met kip": "Hoofdgerecht",
-  "Bitterzoete salade": "Salade",
-  "Black eyed peas salade": "Salade",
-  "Bloedsinaasappelsalade met rode ui en venkel": "Salade",
-  "Bloemkool fritters om je vingers bij af te likken": "Snack",
-  "Bloemkool geroosterd in kruidige yoghurt": "Bijgerecht",
-  "Bloemkool kikkererwtensoep": "Soep",
-  "Bloemkool uit de oven met groene olijven en grote gele rozijnen": "Bijgerecht",
-  "Bloemkool uit de oven op bedje van dadeltahina en met pittige dressing": "Bijgerecht",
-  "Bloemkoolsalade met piment, granaatappel en bleekselderij": "Salade",
-  "Bloemkoolsoep met komijn en pijnboompitten": "Soep",
-  "Boerenkool met .... pittige champignons": "Bijgerecht",
-  "Bolani, Afghaanse gevulde beignets": "Snack",
-  "Bonen-tomaten salade in tahinadressing": "Salade",
-  "Borani flespompoen, yoghurt, dille, walnoot": "Bijgerecht",
-  "Borlottibonen op toast": "Bijgerecht",
-  "Boterzachte prei uit de oven met knapperige citroenpeper panko": "Bijgerecht",
-  "Breekbroodje gedoopt in agavecitroensiroop en maanzaad": "Brood",
-  "Broccoli in heerlijke kruidige labneh": "Bijgerecht",
-  "Broccoli met een ietwat pikante gochujan saus en gecarameliseerde pinda's": "Bijgerecht",
-  "Broccolisalade": "Salade",
-  "Broccolisalade met zoete tahinsaus": "Salade",
-  "Broodjes met korianderzaad en komijnzaad": "Brood",
-  "Bruchetta met gesmoorde venkel": "Bijgerecht",
-  "Bulgur en rode paprika": "Bijgerecht",
-  "Bulgur met spinazie, venkelzaad en sinaasappelzest": "Hoofdgerecht",
-  "Bulgur pilav met bloemkool en abrikozen": "Hoofdgerecht",
-  "Bulgur witlofsalade met kalamata-olijven en pistache": "Salade",
-  "Börek met spinazie en pijnboompitten": "Snack",
-  "Camouflage bonen": "Bijgerecht",
-  "Cavolo nero (palmkool) met venkelzaad en sumac yoghurt": "Bijgerecht",
-  "Champagnerisotto": "Hoofdgerecht",
-  "Chermoula": "Saus & Dip",
-  "Chilli Crisp Pizza": "Pizza",
-  "Chorizo & Manchego Pizza": "Pizza",
-  "Chutney lekker zoet lekker pittig": "Saus & Dip",
-  "Citroen gevuld met risotto, pijnboompittencrème, gekaramelliseerde ui en chutney": "Bijgerecht",
-  "Citroenige courgettesoep en knapperige topping": "Soep",
-  "Citrusrijst": "Bijgerecht",
-  "Clementinesalade met zwarte olijven": "Salade",
-  "Courgette en kikkererwten in warme yoghurt": "Bijgerecht",
-  "Courgette in verrukkelijke tomaten-dadelsaus": "Bijgerecht",
-  "Courgette puree met tomaten": "Bijgerecht",
-  "Courgette uit de oven met tahinasaus, za'atar en gefrituurde salie": "Bijgerecht",
-  "Courgette, uien, knoflook en munt": "Bijgerecht",
-  "Couscous Op Vrijdag": "Bijgerecht",
-  "Couscoussalade met gekruide wortel en palmkool": "Salade",
-  "Crème brulée van pastinaak en knolselderij": "Bijgerecht",
-  "Currysoep met pastinaak en rode linzen": "Soep",
-  "Curryworst met zelfgemaakte currysaus": "Snack",
-  "Dadel-Kardamomboter": "Saus & Dip",
-  "Dadel-kardamomkoekjes": "Dessert",
-  "Dadel-tahinapasta": "Hoofdgerecht",
-  "De groen, groener, groenste salade": "Salade",
-  "De lekkerste gevulde artisjokbodems": "Bijgerecht",
-  "De lekkerste wortel-kokossoep met tamarinde": "Soep",
-  "De romigste en smakelijkste tomatensoep": "Soep",
-  "Delicate tuinbonen pilav": "Hoofdgerecht",
-  "Detroit-style Pepperoni Fire Pizza": "Pizza",
-  "Detroit-style Red Top Pizza": "Pizza",
-  "Detroit-style Trio Pizza": "Pizza",
-  "Detroit-style White Top Pizza": "Pizza",
-  "Dit recept maakt jou een bleekselderijliefhebber": "Bijgerecht",
-  "Doperwten met een heus wow effect": "Bijgerecht",
-  "Doperwten-amandelpuree met zoete uien": "Bijgerecht",
-  "Doperwtensalade": "Salade",
-  "Doperwtensoep met piment, basilicumolie en pistachenoten": "Soep",
-  "Druiven ingekookt in kardemom, kaneel en rietsuiker": "Conserveren",
-  "Een juweel van een rijst": "Bijgerecht",
-  "Egyptische spinazie": "Bijgerecht",
-  "Egyptische spinazie-tomaat rijstschotel": "Bijgerecht",
-  "Fagiolini di Sant'Anna": "Bijgerecht",
-  "Falafel": "Snack",
-  "Fatayer": "Snack",
-  "Fattoush": "Bijgerecht",
-  "Feestelijke Palestijnse Maklooba": "Bijgerecht",
-  "Fetteh met kikkererwten, tahinayoghurt en noten": "Bijgerecht",
-  "Flatbread met yoghurt en verse za'atar olie": "Brood",
-  "Focaccia à la het Midden-Oosten": "Brood",
-  "Focaccia à la io": "Brood",
-  "Foul m'dammes & witte bonen salade": "Salade",
-  "Frisse courgettesalade": "Salade",
-  "Frisse en kruidige aardappels uit de oven": "Bijgerecht",
-  "Frisse orzo soep": "Soep",
-  "Frisse, romige kikkererwtensoep met croûtons": "Soep",
+  "Aubergine rijstrolletjes met citroen tahinasaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aubergine tomatendip met kurkuma en knoflook": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Aubergine venkelsoep met vleugje sinaasappel": [
+    "Soep",
+    "Vegan"
+  ],
+  "Aubergine walnoot topping voor op hummus": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Aubergine, tomaat, kurkuma en walnootstoof": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Auberginepilav": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Auberginesoep met ingelegde citroen en zwarte tahina": [
+    "Soep",
+    "Vegan"
+  ],
+  "Avocadodip met sumac en sesamzaadjes": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Baba ganoush": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Baba ganoush salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Baby-Uitjes in Tamarinde": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Batata hara à la Siham": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Batata in korianderzaad en rode wijn": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Batata in tomatensaus met Libanese zevenkruiden": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Batata à la Abu Julia": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bedje van misoyoghurt, aubergine en knapperige en pittige panko": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Begraven in Vermicelli": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bietenrisotto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Bietensalade met karwij en walnoten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Bigos - Poolse zuurkool met kip": [
+    "Hoofdgerecht",
+    "Beestig Lekker"
+  ],
+  "Bitterzoete salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Black eyed peas salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Bloedsinaasappelsalade met rode ui en venkel": [
+    "Salade",
+    "Vegan"
+  ],
+  "Bloemkool fritters om je vingers bij af te likken": [
+    "Snack",
+    "Vegan"
+  ],
+  "Bloemkool geroosterd in kruidige yoghurt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bloemkool kikkererwtensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Bloemkool uit de oven met groene olijven en grote gele rozijnen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bloemkool uit de oven op bedje van dadeltahina en met pittige dressing": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bloemkoolsalade met piment, granaatappel en bleekselderij": [
+    "Salade",
+    "Vegan"
+  ],
+  "Bloemkoolsoep met komijn en pijnboompitten": [
+    "Soep",
+    "Vega"
+  ],
+  "Boerenkool met .... pittige champignons": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bolani, Afghaanse gevulde beignets": [
+    "Snack",
+    "Vegan"
+  ],
+  "Bonen-tomaten salade in tahinadressing": [
+    "Salade",
+    "Vegan"
+  ],
+  "Borani flespompoen, yoghurt, dille, walnoot": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Borlottibonen op toast": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Boterzachte prei uit de oven met knapperige citroenpeper panko": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Breekbroodje gedoopt in agavecitroensiroop en maanzaad": [
+    "Brood",
+    "Vegan"
+  ],
+  "Broccoli in heerlijke kruidige labneh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Broccoli met een ietwat pikante gochujan saus en gecarameliseerde pinda's": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Broccolisalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Broccolisalade met zoete tahinsaus": [
+    "Salade",
+    "Vegan"
+  ],
+  "Broodjes met korianderzaad en komijnzaad": [
+    "Brood",
+    "Vegan"
+  ],
+  "Bruchetta met gesmoorde venkel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bulgur en rode paprika": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Bulgur met spinazie, venkelzaad en sinaasappelzest": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Bulgur pilav met bloemkool en abrikozen": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Bulgur witlofsalade met kalamata-olijven en pistache": [
+    "Salade",
+    "Vegan"
+  ],
+  "Börek met spinazie en pijnboompitten": [
+    "Snack",
+    "Vegan"
+  ],
+  "Camouflage bonen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Cavolo nero (palmkool) met venkelzaad en sumac yoghurt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Champagnerisotto": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Chermoula": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Chilli Crisp Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Chorizo & Manchego Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "Chutney lekker zoet lekker pittig": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Citroen gevuld met risotto, pijnboompittencrème, gekaramelliseerde ui en chutney": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Citroenige courgettesoep en knapperige topping": [
+    "Soep",
+    "Vegan"
+  ],
+  "Citrusrijst": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Clementinesalade met zwarte olijven": [
+    "Salade",
+    "Vegan"
+  ],
+  "Courgette en kikkererwten in warme yoghurt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Courgette in verrukkelijke tomaten-dadelsaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Courgette puree met tomaten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Courgette uit de oven met tahinasaus, za'atar en gefrituurde salie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Courgette, uien, knoflook en munt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Couscous Op Vrijdag": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Couscoussalade met gekruide wortel en palmkool": [
+    "Salade",
+    "Vegan"
+  ],
+  "Crème brulée van pastinaak en knolselderij": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Currysoep met pastinaak en rode linzen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Curryworst met zelfgemaakte currysaus": [
+    "Snack",
+    "Vegan"
+  ],
+  "Dadel-Kardamomboter": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Dadel-kardamomkoekjes": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Dadel-tahinapasta": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "De groen, groener, groenste salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "De lekkerste gevulde artisjokbodems": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "De lekkerste wortel-kokossoep met tamarinde": [
+    "Soep",
+    "Vegan"
+  ],
+  "De romigste en smakelijkste tomatensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Delicate tuinbonen pilav": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Detroit-style Pepperoni Fire Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "Detroit-style Red Top Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Detroit-style Trio Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Detroit-style White Top Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Dit recept maakt jou een bleekselderijliefhebber": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Doperwten met een heus wow effect": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Doperwten-amandelpuree met zoete uien": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Doperwtensalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Doperwtensoep met piment, basilicumolie en pistachenoten": [
+    "Soep",
+    "Vegan"
+  ],
+  "Druiven ingekookt in kardemom, kaneel en rietsuiker": [
+    "Conserveren",
+    "Vegan"
+  ],
+  "Een juweel van een rijst": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Egyptische spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Egyptische spinazie-tomaat rijstschotel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Fagiolini di Sant'Anna": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Falafel": [
+    "Snack",
+    "Vegan"
+  ],
+  "Fatayer": [
+    "Snack",
+    "Vegan"
+  ],
+  "Fattoush": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Feestelijke Palestijnse Maklooba": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Fetteh met kikkererwten, tahinayoghurt en noten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Flatbread met yoghurt en verse za'atar olie": [
+    "Brood",
+    "Vega"
+  ],
+  "Focaccia à la het Midden-Oosten": [
+    "Brood",
+    "Vegan"
+  ],
+  "Focaccia à la io": [
+    "Brood",
+    "Vegan"
+  ],
+  "Foul m'dammes & witte bonen salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Frisse courgettesalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Frisse en kruidige aardappels uit de oven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Frisse orzo soep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Frisse, romige kikkererwtensoep met croûtons": [
+    "Soep",
+    "Vegan"
+  ],
   "Gado Gado - Indonesische Salade met Aardappels, Sperziebonen & Pindadressing": [
     "Salade",
     "Vegan"
   ],
-  "Galette van flespompoen, sinaasappel en salie": "Bijgerecht",
-  "Gebakken avocado met kidneybonen, paprika en tomaat": "Bijgerecht",
-  "Gebakken palmkool met tahina saus": "Bijgerecht",
-  "Gebakken prei met tomaat, amandel en arak": "Bijgerecht",
-  "Gebakken quinoa met bietjes, zwarte olijven, sinaasappel en walnoot": "Bijgerecht",
-  "Gebakken rode paprika": "Bijgerecht",
-  "Gebakken rodekool'salade' met bloedsinaasappel, koolrabi en kumquats": "Salade",
-  "Gebakken romaine sla met citroen, gerst en croûtons": "Bijgerecht",
-  "Geblakerde courgette met gepofte knoflook en tahinayoghurt": "Bijgerecht",
-  "Gebonden Marokkaanse tomatensoep met gefrituurde rucola": "Soep",
-  "Gecaramelliseerde aardappels uit de oven met gedroogde pruimen": "Bijgerecht",
-  "Gedroogde vijg, zwarte olijven, amandel agavesiroop dip": "Saus & Dip",
-  "Gefrituurde bloemkool in tahina gerookte paprikasaus": "Bijgerecht",
-  "Gefrituurde courgettereepjes": "Bijgerecht",
-  "Geglaceerde gepofte aardappel uit de oven in ketjap-harissa-tahina": "Bijgerecht",
-  "Gegrilde artisjokhart met za'atar aioli": "Bijgerecht",
-  "Gegrilde bloemkool en aubergine met tomatensalsa": "Bijgerecht",
-  "Gegrilde bloemkool op bedje van kikkererwtenpuree met ingelegde appel": "Bijgerecht",
-  "Gegrilde groentesoep met uitgebakken citroenschil": "Soep",
-  "Gegrilde perziksalade met snijbonen": "Salade",
-  "Gegrilde romainesla met krokante kikkererwten": "Bijgerecht",
-  "Gegrilde vijgensalade met Japanse invloeden": "Salade",
-  "Gekarameliseerde venkel in saffraansaus": "Bijgerecht",
-  "Gekruide gedroogde tuinbonensoep": "Soep",
-  "Gekruide paarse wortel met dadels en hazelnoten": "Bijgerecht",
-  "Gepaneerde kruidige joekels van olijven": "Bijgerecht",
-  "Gepofte aardappel met korianderzaad en zwarte olijven": "Bijgerecht",
-  "Gerookte auberginesoep met huisgemaakte basilicumolie": "Soep",
-  "Gerookte bieten met karamelcrunch": "Bijgerecht",
-  "Geroosterde bietjes met mierikswortel-amandelsaus": "Bijgerecht",
-  "Geroosterde bloemkool met tahini en gerookte paprikapoeder": "Bijgerecht",
-  "Geroosterde paprikasalade met appel": "Salade",
-  "Gesmoord (in) groen": "Bijgerecht",
-  "Gesmoorde radicchio": "Bijgerecht",
-  "Gesmoorde rode paprika met dadels, lekker veel korianderzaad en pijnboompitten": "Bijgerecht",
-  "Gestoofde prei in witte wijn met krokante reepjes": "Bijgerecht",
-  "Gevulde courgettes": "Bijgerecht",
-  "Gevulde courgettes met gekruide couscous": "Bijgerecht",
-  "Gevulde puntpaprika met kruidige quinoa": "Bijgerecht",
-  "Gevulde tomaten met rozijnen en pijnboompitten": "Bijgerecht",
-  "Gewokte Spruitjes": "Bijgerecht",
-  "Gigantes plaki à la Margarita": "Bijgerecht",
-  "Goddelijke pastasaus": "Bijgerecht",
-  "Gouden bulgur met betoverende wortel en granaatappel": "Bijgerecht",
-  "Granaatappelsoep": "Soep",
-  "Gratin à la Dalat": "Bijgerecht",
-  "Groene asperges met Arabische twist": "Bijgerecht",
-  "Groene tabouleh": "Bijgerecht",
-  "Groene tomaten chutney": "Saus & Dip",
-  "Groente, barley én za'atar in de mix": "Bijgerecht",
-  "Grove bulgur salade met spinazie, wortel uit de oven en gedroogde vijgen": "Salade",
-  "Haricots verts salade met hazelnoten": "Salade",
-  "Harira": "Bijgerecht",
-  "Harissa aardappels met een tahinsojasaus": "Bijgerecht",
-  "Hartverwarmende hummussoep": "Soep",
-  "Hartverwarmende linzen, snijbietsoep": "Soep",
-  "Healthy spicy snack": "Bijgerecht",
-  "Heel frisse en romige aubergine citroensoep": "Soep",
-  "Heel kruidige wortels uit de oven in tamarinde": "Bijgerecht",
-  "Heel verrassende kruidige uien": "Bijgerecht",
-  "Heerlijk zachte Kibbeh van pompoen en zevenkruidenpoeder": "Snack",
-  "Heerlijke starter van wrap met bloemkool en tahina": "Bijgerecht",
-  "Hele frisse en hele Arabische bulgurkikkerwtensalade": "Salade",
-  "Het complete koolraapstampotje": "Bijgerecht",
-  "Het witte paradijs is hier op aarde": "Bijgerecht",
-  "Houmous": "Bijgerecht",
-  "Hummus ehhhh bietendip": "Saus & Dip",
-  "Hummus royale met gepofte knoflook en champignons": "Saus & Dip",
-  "Italian Sausage & Hot Honey Pizza": "Pizza",
-  "Jalapeño Bacon Dip": "Saus & Dip",
-  "Jambalaya met chorizo en kip": "Hoofdgerecht",
-  "Japans Melkbrood met gefrituurde Wagyu": "Snack",
-  "Kachumbari": "Bijgerecht",
-  "Kadaifi pastei met Libanese vulling van aubergine en tomaat": "Hoofdgerecht",
-  "Kadaifipastei met vulling van palmkool, dadel en ras el hanout": "Hoofdgerecht",
-  "Kadaifipasteitje met aubergine-tomaatvulling": "Hoofdgerecht",
-  "Keftedes van groenten": "Bijgerecht",
-  "Kibbeh de Batata": "Snack",
-  "Kibbeh van rode linzen": "Snack",
-  "Kibbeh van zoete aardappel en zongedroogde tomaat": "Snack",
-  "Kibbeh Yaqeen": "Snack",
-  "Kikkererwtenpilav met zongedroogde tomaten": "Hoofdgerecht",
-  "Klassieke Libanese Toum (knoflook dip)": "Saus & Dip",
-  "Knapperig gebakken prei met romige kappertjessaus": "Bijgerecht",
-  "Knapperige boerenkoolsalade": "Salade",
-  "Knapperige coeur de boeuf tomaat": "Bijgerecht",
-  "Knapperige pikante bloemkool": "Bijgerecht",
-  "Knapperige za'alouk (aubergine) met za'atar en limabonenpuree": "Bijgerecht",
-  "Knoflook-saffraansoep met harissa": "Soep",
-  "Knolselderij met hazelnoot, munt op bedje van frisse linzenpuree.": "Bijgerecht",
-  "Knolselderijsoep met een vleug vanille, ruccolaolie, zuurbessen en sumak": "Soep",
-  "Knolselderijspiesjes met kweepeerchutney": "Bijgerecht",
-  "Komkommersalade met tahina en sesam": "Salade",
-  "Koningsoesterzwam op pastinaakcrème en met pijnboompittendakje": "Bijgerecht",
-  "Koolrabi salade Midden-Oosten stijl": "Salade",
-  "Kort gebakken bloemkool met rozijnen, pijnboompitten en gedroogde munt": "Bijgerecht",
-  "Krieltjes uit de oven met salsa van ingelegde citroen en kappertjes": "Bijgerecht",
-  "Kropsla, radicchio, gekarameliseerde venkel en hazelnoten": "Bijgerecht",
-  "Kruidensalade": "Salade",
-  "Kruidig, licht pittig bulgur hapje als starter": "Snack",
-  "Kruidige aardappelstamp met verse kurkuma en komijn": "Bijgerecht",
-  "Kruidige kibbeh balletjes van pompoen": "Snack",
-  "Kruidige knolselderij uit de oven": "Bijgerecht",
-  "Kruidige Kurkuma Cayenne Fenegriek Knoflook Koolraap": "Bijgerecht",
-  "Kruidige linzenpuree": "Bijgerecht",
-  "Kruidige pompoen uit de oven met gedroogde vijgen, gerookte amandelen en pecannoten": "Bijgerecht",
-  "Kruidige rijst uit de oven met korianderyoghurt": "Bijgerecht",
-  "Kruidige salade van bakbanaan, appel en kokos": "Salade",
-  "Kruidige verwarmende stoof van knolselderij in dikke tomatensaus": "Bijgerecht",
-  "Kweepeertaart met een vleugje Midden-Oosten erin": "Dessert",
-  "Labaneya Arabische spinaziesoep met kurkuma, sesam en rijst": "Soep",
-  "Labneh met vijgen en gekarameliseerde walnoten": "Bijgerecht",
-  "Lauwwarme bulgursalade": "Salade",
-  "Lauwwarme wortelsalades": "Salade",
-  "Lekkerste auberginedip met ingelegde citroen": "Bijgerecht",
-  "Lekkerste limabonen in crispy oil": "Bijgerecht",
-  "Lekkerste Risotto met gepofte knoflook en tomaat": "Hoofdgerecht",
-  "Libanees pasteitje met bloemkool en aubergine": "Hoofdgerecht",
-  "Libanese andijviesalade uit de bergen": "Salade",
-  "Libanese Komkommersalade(s)": "Salade",
-  "Libanese linzen": "Bijgerecht",
-  "Libanese prei met zevenkruidenpoeder en grove bulgur": "Bijgerecht",
-  "Libanese romige rode linzensoep met knapperige pitacroûtons": "Soep",
-  "Libanese zevenkruidenpoeder": "Bijgerecht",
-  "Limabonen in kruidige, pikante en frisse olie": "Bijgerecht",
-  "Limabonenburgers met pittige paprikasaus": "Bijgerecht",
-  "Limabonenpaprika dip": "Bijgerecht",
-  "Limabonenpuree met knoflook aïoli": "Bijgerecht",
-  "Linguine met boerenworst en puntpaprika": "Hoofdgerecht",
-  "Linzen in gouden room": "Bijgerecht",
-  "Linzen in saus van tahina, tomaten en komijn": "Bijgerecht",
-  "Linzen met champignonragout en ingemaakte citroen": "Bijgerecht",
-  "Linzen met dadel in een heel kruidige gele room": "Bijgerecht",
-  "Linzen met zoete langzaam gegaarde tomaatjes": "Bijgerecht",
-  "Linzen Quinoa salade": "Salade",
-  "Linzen à la Aïcha": "Bijgerecht",
-  "Linzen-auberginestoof": "Hoofdgerecht",
-  "Linzenpilav van engelenhaar": "Hoofdgerecht",
-  "Loubyeh b'zeit": "Bijgerecht",
-  "Luchtig, knapperig Libanees bulgurbrood met za'atar": "Brood",
-  "Lunch met een ster": "Bijgerecht",
-  "Maftoul, dé Palestijnse klassieker": "Bijgerecht",
-  "Mango spinazie currysalade": "Salade",
-  "Marmite & Hot Honey Pizza": "Pizza",
-  "Marokkaans gevuld brood met bloemkool": "Brood",
-  "Marokkaanse appel-dadeltaart": "Dessert",
-  "Marokkaanse gesmoorde pikante bleekselderij": "Bijgerecht",
-  "Marokkaanse gratin van aardappelpuree en Groningse blauwsnijmoes (of spinazieandijvie)": "Bijgerecht",
-  "Marokkaanse kruidige hartverwarmende witte bonen": "Bijgerecht",
-  "Marokkaanse kruidige pompoen-kokossoep": "Soep",
-  "Marokkaanse pompoenpuree met pistache": "Bijgerecht",
-  "Marokkaanse preisoep met kikkererwten croûtons": "Soep",
-  "Marokkaanse sperziebonen à la Fatim-Zahra": "Bijgerecht",
-  "Marokkaanse Spinazie": "Bijgerecht",
-  "Marokkaanse spinaziesoep": "Soep",
-  "Marokkaanse spitskool met harissa en komijnzaad": "Bijgerecht",
-  "Marokkaanse woestijnsoep": "Soep",
-  "Marokkaanse wortelsalade met limoen yoghurt": "Salade",
-  "Meatball & Cavolo Nero Pizza": "Pizza",
-  "Meiknol in tahinasaus met kikkererwten, komijn, korianderzaad en gerookte paprika": "Bijgerecht",
-  "Meiknolletjes uit de oven": "Bijgerecht",
-  "Minestra nera met venkelzaad en pijnboompitten": "Bijgerecht",
-  "Mississippi mud pie": "Dessert",
-  "Mizuna, peer en kikkererwtensalade met rozenharissa": "Salade",
-  "Molokhieh soep met tuinbonen": "Soep",
-  "Muhammara": "Saus & Dip",
-  "Musakhan van paddenstoelen": "Bijgerecht",
-  "Musaqa'a": "Bijgerecht",
-  "Mìjn Libanese 'kaak' met za'atar": "Bijgerecht",
-  "Next level venkel gratin": "Bijgerecht",
-  "NY-style Elotes Pizza": "Pizza",
-  "NY-style Pepperoni met Vodka Saus Pizza": "Pizza",
-  "NY-style Sausage & Rapini Pizza": "Pizza",
-  "NY-style White Pie Pizza": "Pizza",
-  "Okra's in tomatensaucs": "Bijgerecht",
-  "Okras in tomato sauce": "Bijgerecht",
-  "Olijven, munt, koriander broodjes": "Brood",
-  "Olijvensoep à la Ellen": "Soep",
-  "Orzo salade met borlottibonen, doperwten en rucolapesto": "Salade",
-  "Overheerlijke gemarineerde olijven": "Bijgerecht",
-  "Paddenstoelen in een Libanees specerijenmengsel": "Bijgerecht",
-  "Paddenstoelen in venkelzaad en arak": "Bijgerecht",
-  "Paddenstoelen risotto met cavolo nero en hazelnoten": "Hoofdgerecht",
-  "Paddenstoelen, limabonenpuree en kruidige tomatenpuree": "Bijgerecht",
-  "Paella": "Hoofdgerecht",
-  "Palestijnse cavolo nero salade van Ramsey": "Salade",
-  "Palestijnse linzensoep": "Soep",
-  "Palestijnse rode biet salade": "Salade",
-  "Palestijnse spinazie": "Bijgerecht",
-  "Paprikapuree of dip zo je wilt": "Bijgerecht",
-  "Parelcouscous (maftoul) met ingelegde citroen, pistache en spinazie": "Bijgerecht",
-  "Parelcouscous met bloemkool, pistache en granaatappel": "Hoofdgerecht",
-  "Parelcouscous met rozijnen en amandelen": "Hoofdgerecht",
-  "Parelcouscous met spinazie en zongedroogde tomaatjes": "Hoofdgerecht",
-  "Parelcouscous salade met kaneel, dadelsiroop, spinazie (en witte )asperges": "Salade",
-  "Passata di pomodoro à la Giancarlo": "Bijgerecht",
-  "Pasta aglio olio": "Hoofdgerecht",
-  "Pasta bil laban": "Hoofdgerecht",
-  "Pasta con salsa di cipole": "Hoofdgerecht",
-  "Pasta met bloemkoolkrokant": "Hoofdgerecht",
-  "Pasta met een fluweelgroene saus en oventomaatjes": "Hoofdgerecht",
-  "Pasta met een walnotensaus": "Hoofdgerecht",
-  "Pasta met gesmoorde radicchio en pijnboompitten": "Hoofdgerecht",
-  "Pasta met snijbiet roomsaus": "Hoofdgerecht",
-  "Pasta met zachte bleekselderij tomatensaus": "Hoofdgerecht",
-  "Pasta à la Katrin": "Hoofdgerecht",
-  "Pastasalade met baies roses": "Salade",
-  "Pastilla à la Fati": "Bijgerecht",
-  "Pastinaak frites": "Snack",
-  "Pastinaak in sinaasappel-harissasiroop": "Bijgerecht",
-  "Pastinaak met tahinasaus en granaatappelpitjes": "Bijgerecht",
-  "Pastinaaksoep": "Soep",
-  "Patatas salatasi": "Bijgerecht",
-  "Perzische gekaramelliseerde venkelsalade": "Salade",
-  "Perzische rijsttaart met kruidige vullingen verrassende topping": "Dessert",
-  "Pesto van palmkool (onder meer dan hè)": "Bijgerecht",
-  "Pikante aardappelkoekjes": "Snack",
-  "Pikante Bieten Beignets": "Snack",
-  "Pikante bulgursoep": "Soep",
-  "Pikante groene olijven in gegrilde paprika": "Bijgerecht",
-  "Pikante wortelpuree": "Bijgerecht",
-  "Pikante za'atar crackers": "Brood",
-  "Pikante zoete bulgur met gegrilde groene asperges": "Bijgerecht",
-  "Pimientos de Padron met tahinsaus": "Bijgerecht",
-  "Pissaladière": "Bijgerecht",
-  "Pittige Bulgursalade": "Salade",
-  "Pittige Marokkaanse aardappelsalade": "Salade",
-  "Pittige pompoen uit de oven": "Bijgerecht",
-  "Pizza Caprese": "Pizza",
-  "Pizzadeeg": "Pizza",
-  "Pjadra": "Bijgerecht",
-  "Platano als ontbijt": "Ontbijt",
-  "Pofaardappel met yoghurt fenegriek en steranijsbosuitjes": "Bijgerecht",
-  "Pompoen cashewnotenpastei": "Hoofdgerecht",
-  "Pompoen kibbeh met macademianoten en gecarameliseerde ui": "Snack",
-  "Pompoen-wortel sinaasappelsoep à la Astrid": "Soep",
-  "Pompoenbrood met cashewnoten en sesam": "Brood",
-  "Pompoenpilav": "Hoofdgerecht",
-  "Pompoenpitten à la oma Billy": "Bijgerecht",
-  "Pompoenrisotto": "Hoofdgerecht",
-  "Pompoensoep met gember(siroop) en kokosmelk": "Soep",
-  "Portabello gevuld met risotto van prei en funghi porcini": "Hoofdgerecht",
-  "Prei - mosterdsoep met kokosmelk": "Soep",
-  "Prei uit de oven die smelt op je tong met preiroom": "Bijgerecht",
-  "Prei uit de oven in saffraanvinaigrette en pikante kruim": "Bijgerecht",
-  "Prei-mosterdsoep met szechuan peper": "Soep",
-  "Prei-pistache soep met sumac en sinaasappel": "Soep",
-  "Quinoa Risotto met Paddestoelen": "Hoofdgerecht",
-  "Quinoa salade met kruidige wortel en palmkool": "Salade",
-  "Quinoa venkel salade": "Salade",
-  "Quinoasalade met courgette en...": "Salade",
-  "Radicchio peer salade": "Salade",
-  "Radicchio salade": "Salade",
-  "Radicchio salade met dadels en pompoenpitten": "Salade",
-  "Ramen noodles soep": "Soep",
-  "Red hot chili bloemkool": "Bijgerecht",
-  "Rendang": "Bijgerecht",
-  "Rijst met linzen met harissa aubergine": "Hoofdgerecht",
-  "Rijst à la Peninah": "Bijgerecht",
-  "Rijstsalade 'to die for'": "Salade",
-  "Rijstsalade van tuinbonen, zuurbessen, cranberries en dille": "Salade",
-  "Risotto al salto": "Hoofdgerecht",
-  "Risotto met artisjokharten en citroenzest": "Hoofdgerecht",
-  "Risotto met karwijzaad, gefrituurde zuurkool en mosterd(ijs)": "Hoofdgerecht",
-  "Risotto à la Milanese": "Hoofdgerecht",
-  "Roasted Mushroom Pizza Bianca": "Pizza",
-  "Rode biet in sinaasappelsiroop": "Bijgerecht",
-  "Rode biet met tijmsalie en hazelnoten krokant": "Bijgerecht",
-  "Rode biet op een citroen-crème met pijnboompitten en munt": "Bijgerecht",
-  "Rode bieten met pit": "Bijgerecht",
-  "Rode bietensalade in een tahina dressing met gefrituurde bosui": "Salade",
-  "Rode bietensalade met walnoot-dadelpesto en sinaasappel": "Salade",
-  "Rode linzensoep met tamarinde": "Soep",
-  "Rode paprika, knolselderij en tahinasoep": "Soep",
-  "Rode paprikapasta (o-ve-ral lekker bij)": "Hoofdgerecht",
-  "Romige aubergine-tomatensoep": "Soep",
-  "Romige courgettesoep met knapperige bulgur topping": "Soep",
-  "Romige knoflook-amandelsoep": "Soep",
-  "Romige knoflooksoep met harissa": "Soep",
-  "Romige kruidige rijst in witte koolblad": "Bijgerecht",
-  "Romige paddenstoelensoep met tahina en ouzo of arak": "Soep",
-  "Romige tomatensoep met gember, citroengras en citroenblad": "Soep",
-  "Romige Venkel-Knoflookrisotto": "Hoofdgerecht",
-  "Romige witte kool - amandelsoep met venkelzaad en zuurbessen": "Soep",
-  "Roumania à la Nazeera": "Bijgerecht",
-  "Roumaniya fetteh": "Bijgerecht",
-  "Rucola Meloen salade": "Salade",
-  "Rucola soep, ja echt": "Soep",
-  "Sabayech (spinazie) à la Fati": "Bijgerecht",
-  "Salad Pizza ft. Gabagool": "Pizza",
-  "Salade met artisjok, avocado en tomaat": "Salade",
-  "Salade met aubergine dressing en peterselie olie en shatta": "Salade",
-  "Salade met onvergetelijke dressing van zongedroogde tomaten": "Salade",
-  "Salade met peer, linzen, zuurbessen en balsamicosiroop": "Salade",
-  "Salade van artisjok, doperwten, ingelegde citroen, ras el hanout": "Salade",
-  "Salade van biet, pistache, granaatappelmelasse en zuurbessen": "Salade",
-  "Salade van boerenkool, biet, appel en gekarameliseerde walnoot": "Salade",
-  "Salade van boerenkool, noten in sojaagave en appel uit de oven": "Salade",
-  "Salade van courgette, krieltje, walnoot en kruidigezoete ui": "Salade",
-  "Salade van gegrilde courgetteslierten, limabonen, walnoot en granaatappelmelasse": "Salade",
-  "Salade van limabonenpuree, sinaasappel, hazelnoten en ingelegde aubergine": "Salade",
-  "Salade van limabonenpuree, snijbiet en wel heel knapperige uien": "Salade",
-  "Salade van olijven en noten": "Salade",
-  "Salade van snijbiet, gemarineerde krenten en pijnboompitten": "Salade",
-  "Salade van tomaat en munt": "Salade",
-  "Salade verte": "Salade",
-  "Salade à la le frigo": "Salade",
-  "Saladebootje met baba ganoush en shatta": "Salade",
-  "Saladebootje met verse kruiden, sumac en tahini dressing": "Salade",
-  "Sappige parelcouscous met gegrilde kikkererwten, aardpeer en paprika": "Bijgerecht",
-  "Seven shades of green": "Bijgerecht",
-  "Sinaasappelrijst": "Bijgerecht",
-  "Sinaasappelsalade met zwarte olijven": "Salade",
-  "Sjalot gemarineerd in granaatappelmelasse en kaneel": "Bijgerecht",
-  "Smeuïge linzen, spinazie, tomaat in mosterdsaus": "Bijgerecht",
-  "Snijbiet in witte wijnsaus met tahinasaus erover heen": "Bijgerecht",
-  "Snijbiet met linzen, champignons en aardappel": "Bijgerecht",
-  "Soedanese auberginestoof": "Hoofdgerecht",
-  "Spaghetti met boerenkoolpesto en cashewnoten": "Hoofdgerecht",
-  "Spaghetti met dé truffelsaus": "Hoofdgerecht",
-  "Spaghetti à la Trapanese": "Hoofdgerecht",
-  "Spannende en zalvende orzo met boerenkool, tomaat en meer...": "Hoofdgerecht",
-  "Spectaculaire Vijgensalade": "Salade",
-  "Sperziebonen ai ai ai zo goddelijk lekker": "Bijgerecht",
-  "Sperziebonen in tamarinde-tomatensaus": "Bijgerecht",
-  "Sperziebonen op een heerlijk bedje en kruimige deken": "Bijgerecht",
-  "Sperziebonensalade met chermoula": "Salade",
-  "Spinazie en black eyed peas met Szechuan peper": "Bijgerecht",
-  "Spinazie in yoghurtsaus met walnoot en amandel": "Bijgerecht",
-  "Spinazie met tomaten en amandelen": "Bijgerecht",
-  "Spinazie met za'atar kastanjechampignons": "Bijgerecht",
-  "Spinazie wondergerecht": "Bijgerecht",
-  "Spinazie-koriander risotto": "Hoofdgerecht",
-  "Spinaziedip": "Saus & Dip",
-  "Spinaziepilav": "Hoofdgerecht",
-  "Spinaziesalade met friszuurzoet gemarineerde dadel, amandelen en knapperige pita": "Salade",
-  "Spinaziesoep en meer met sojapaddenstoelen": "Soep",
-  "Spinazietaartjes met gecarameliseerde ui en walnoten": "Bijgerecht",
-  "Spitskool gebakken in harissa, druiven en zuurbessen": "Bijgerecht",
-  "Spitskool met gedroogde vijg en hummus": "Bijgerecht",
-  "Spitskool met gemberroom en drakenolie": "Bijgerecht",
-  "Spitskool met sumac krenten en spinazie": "Bijgerecht",
-  "Spruitjes in een sjalot sherry saus": "Bijgerecht",
-  "Spruitjes in salie en hazelnoten": "Bijgerecht",
-  "Spruitjes in witte wijn én een fluwelen uiensaus": "Bijgerecht",
-  "Spruitjes met rode druiven en sherry": "Bijgerecht",
-  "Spruitjes op bedje van cashew-tahinasaus": "Bijgerecht",
-  "Stevige kibbeh met prei en aardappel en hét klassieke kibbeh specerijenmengsel": "Snack",
-  "Sticky tempeh": "Bijgerecht",
-  "Sticky wortels": "Bijgerecht",
-  "Stoof van snijbiet, kikkererwt, tomaat in tamarindesaus": "Bijgerecht",
-  "Syrische spinazie": "Bijgerecht",
-  "Tabouleh": "Bijgerecht",
-  "Tagine hartig en zoet": "Hoofdgerecht",
-  "Tagine met Pruimen en Amandelen": "Hoofdgerecht",
-  "Tagine met tuinbonen, artisjok en broccoli": "Hoofdgerecht",
-  "Tarte Tatin aux Abricots": "Bijgerecht",
-  "Thaise currysoep": "Soep",
-  "Tiramisu": "Dessert",
-  "Tomaat granaatappelsalade": "Salade",
-  "Tomaatjes in tahina - muntsaus": "Bijgerecht",
-  "Tomaten chili relish": "Bijgerecht",
-  "Tomatenpilav": "Hoofdgerecht",
-  "Tomatensalade met gebakken citroen": "Salade",
-  "Tomatensalade op auberginepuree met tamarinde": "Salade",
-  "Tomatensoep met borlottibonen en venkelzaad": "Soep",
-  "Tot 'op het bot' gegaarde pikante courgette in knoflookpuree": "Bijgerecht",
-  "Truffelbitterballen to die for": "Snack",
-  "Tuinbonen & artisjokken": "Bijgerecht",
-  "Tuinbonen in Libanese romige citroenknoflooksaus": "Bijgerecht",
-  "Tuinbonensalade op bedje van tomatencoulis": "Salade",
-  "Tunesische spinazie": "Bijgerecht",
-  "Turkse pittige paprikapuree": "Bijgerecht",
-  "Uien uit de oven met sinaasappelsiroop en tijm": "Bijgerecht",
-  "Venkel in spinazie-cashew saus en verse koriander": "Bijgerecht",
-  "Venkel met Saffraancroûtons": "Bijgerecht",
-  "Venkelsoep met ingelegde citroen en zwarte olijven": "Soep",
-  "Vermicellirijst": "Bijgerecht",
-  "Verrassende walnootdip": "Saus & Dip",
-  "Verrukkelijke Knapperige Aubergine": "Bijgerecht",
-  "Verrukkelijke muhammar rijst met ingelegde dadels": "Bijgerecht",
-  "Verslavend lekkere kruidige sjalotten": "Bijgerecht",
-  "Vietnamese loempia": "Bijgerecht",
-  "Vijgenhummus": "Saus & Dip",
-  "Volle rode saffraanrijst, fatteh en groenten": "Bijgerecht",
-  "Walnootsoep": "Soep",
-  "Warak enab": "Bijgerecht",
-  "Warme spinazie yoghurt soep": "Soep",
-  "Warme yoghurt tuinbonensoep met citroen": "Soep",
-  "Warme, ja echt, warme hummus met gebakken brood": "Brood",
-  "Watermeloen tomaatsalade met kappertjes en uitgebakken brood": "Salade",
-  "Watermeloensalade": "Salade",
-  "Wijnbladerentaart gevuld met romige en kruidige risotto": "Hoofdgerecht",
-  "Wilde spinazie met rozijnen en pijnboompitten": "Bijgerecht",
-  "Winter tabouleh": "Bijgerecht",
-  "Winterse citrussalade met frisse labneh": "Salade",
-  "Witlofsalade": "Salade",
-  "Wortel uit de oven met komijn": "Bijgerecht",
-  "Wortelsalade met cardamom, gember en citroen": "Salade",
-  "Za'atar crackers": "Brood",
-  "Zachte soep uit Imlil": "Soep",
-  "Zalige geroosterde aubergine in tamarindesaus": "Bijgerecht",
-  "Zalm op Spruiten met Noedelsalade": "Hoofdgerecht",
-  "Zeer serieus genomen sperziebonen": "Bijgerecht",
-  "Zelf Harissa maken": "Saus & Dip",
-  "Zelf ingelegde citroenen": "Bijgerecht",
-  "Zoet-pikante tomaten, borlottibonen soep voor koude dagen": "Soep",
-  "Zoete aardappel in tomaten-limoensaus en kardemom": "Bijgerecht",
-  "Zoete aardappel peer soep": "Soep",
-  "Zoete aardappelsalade met pecannoten": "Salade",
-  "Zoete paprikasoep met zwarte olijven": "Soep",
-  "Zoete Tomatenpuree": "Bijgerecht",
-  "Zoete uiensoep": "Soep",
-  "Zoeteaardappelkoekjes met harissa": "Snack",
-  "Zoetzure romige zuurkoolschotel": "Bijgerecht",
-  "Zomers spinaziestamppotje": "Bijgerecht",
-  "Zomerse Arabische courgettesoep": "Soep",
-  "Zondagmiddag Zaynab soep": "Soep",
-  "Zuppa di Pomodoro": "Bijgerecht",
-  "Zwarte rijstsalade met pikante courgette": "Salade"
+  "Galette van flespompoen, sinaasappel en salie": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Gebakken avocado met kidneybonen, paprika en tomaat": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gebakken palmkool met tahina saus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gebakken prei met tomaat, amandel en arak": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gebakken quinoa met bietjes, zwarte olijven, sinaasappel en walnoot": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gebakken rode paprika": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gebakken rodekool'salade' met bloedsinaasappel, koolrabi en kumquats": [
+    "Salade",
+    "Vegan"
+  ],
+  "Gebakken romaine sla met citroen, gerst en croûtons": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Geblakerde courgette met gepofte knoflook en tahinayoghurt": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Gebonden Marokkaanse tomatensoep met gefrituurde rucola": [
+    "Soep",
+    "Vegan"
+  ],
+  "Gecaramelliseerde aardappels uit de oven met gedroogde pruimen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gedroogde vijg, zwarte olijven, amandel agavesiroop dip": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Gefrituurde bloemkool in tahina gerookte paprikasaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gefrituurde courgettereepjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Geglaceerde gepofte aardappel uit de oven in ketjap-harissa-tahina": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gegrilde artisjokhart met za'atar aioli": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gegrilde bloemkool en aubergine met tomatensalsa": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gegrilde bloemkool op bedje van kikkererwtenpuree met ingelegde appel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gegrilde groentesoep met uitgebakken citroenschil": [
+    "Soep",
+    "Vegan"
+  ],
+  "Gegrilde perziksalade met snijbonen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Gegrilde romainesla met krokante kikkererwten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gegrilde vijgensalade met Japanse invloeden": [
+    "Salade",
+    "Vegan"
+  ],
+  "Gekarameliseerde venkel in saffraansaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gekruide gedroogde tuinbonensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Gekruide paarse wortel met dadels en hazelnoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gepaneerde kruidige joekels van olijven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gepofte aardappel met korianderzaad en zwarte olijven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gerookte auberginesoep met huisgemaakte basilicumolie": [
+    "Soep",
+    "Vegan"
+  ],
+  "Gerookte bieten met karamelcrunch": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Geroosterde bietjes met mierikswortel-amandelsaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Geroosterde bloemkool met tahini en gerookte paprikapoeder": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Geroosterde paprikasalade met appel": [
+    "Salade",
+    "Vegan"
+  ],
+  "Gesmoord (in) groen": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Gesmoorde radicchio": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gesmoorde rode paprika met dadels, lekker veel korianderzaad en pijnboompitten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gestoofde prei in witte wijn met krokante reepjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gevulde courgettes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gevulde courgettes met gekruide couscous": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gevulde puntpaprika met kruidige quinoa": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gevulde tomaten met rozijnen en pijnboompitten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gewokte Spruitjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Gigantes plaki à la Margarita": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Goddelijke pastasaus": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Gouden bulgur met betoverende wortel en granaatappel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Granaatappelsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Gratin à la Dalat": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Groene asperges met Arabische twist": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Groene tabouleh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Groene tomaten chutney": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Groente, barley én za'atar in de mix": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Grove bulgur salade met spinazie, wortel uit de oven en gedroogde vijgen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Haricots verts salade met hazelnoten": [
+    "Salade",
+    "Vega"
+  ],
+  "Harira": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Harissa aardappels met een tahinsojasaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Hartverwarmende hummussoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Hartverwarmende linzen, snijbietsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Healthy spicy snack": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Heel frisse en romige aubergine citroensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Heel kruidige wortels uit de oven in tamarinde": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Heel verrassende kruidige uien": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Heerlijk zachte Kibbeh van pompoen en zevenkruidenpoeder": [
+    "Snack",
+    "Vegan"
+  ],
+  "Heerlijke starter van wrap met bloemkool en tahina": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Hele frisse en hele Arabische bulgurkikkerwtensalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Het complete koolraapstampotje": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Het witte paradijs is hier op aarde": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Houmous": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Hummus ehhhh bietendip": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Hummus royale met gepofte knoflook en champignons": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Italian Sausage & Hot Honey Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "Jalapeño Bacon Dip": [
+    "Saus & Dip",
+    "Beestig Lekker"
+  ],
+  "Jambalaya met chorizo en kip": [
+    "Hoofdgerecht",
+    "Beestig Lekker"
+  ],
+  "Japans Melkbrood met gefrituurde Wagyu": [
+    "Snack",
+    "Beestig Lekker"
+  ],
+  "Kachumbari": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kadaifi pastei met Libanese vulling van aubergine en tomaat": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Kadaifipastei met vulling van palmkool, dadel en ras el hanout": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Kadaifipasteitje met aubergine-tomaatvulling": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Keftedes van groenten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kibbeh de Batata": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kibbeh van rode linzen": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kibbeh van zoete aardappel en zongedroogde tomaat": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kibbeh Yaqeen": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kikkererwtenpilav met zongedroogde tomaten": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Klassieke Libanese Toum (knoflook dip)": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Knapperig gebakken prei met romige kappertjessaus": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Knapperige boerenkoolsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Knapperige coeur de boeuf tomaat": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Knapperige pikante bloemkool": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Knapperige za'alouk (aubergine) met za'atar en limabonenpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Knoflook-saffraansoep met harissa": [
+    "Soep",
+    "Vegan"
+  ],
+  "Knolselderij met hazelnoot, munt op bedje van frisse linzenpuree.": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Knolselderijsoep met een vleug vanille, ruccolaolie, zuurbessen en sumak": [
+    "Soep",
+    "Vegan"
+  ],
+  "Knolselderijspiesjes met kweepeerchutney": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Komkommersalade met tahina en sesam": [
+    "Salade",
+    "Vegan"
+  ],
+  "Koningsoesterzwam op pastinaakcrème en met pijnboompittendakje": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Koolrabi salade Midden-Oosten stijl": [
+    "Salade",
+    "Vega"
+  ],
+  "Kort gebakken bloemkool met rozijnen, pijnboompitten en gedroogde munt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Krieltjes uit de oven met salsa van ingelegde citroen en kappertjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kropsla, radicchio, gekarameliseerde venkel en hazelnoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidensalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Kruidig, licht pittig bulgur hapje als starter": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kruidige aardappelstamp met verse kurkuma en komijn": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige kibbeh balletjes van pompoen": [
+    "Snack",
+    "Vegan"
+  ],
+  "Kruidige knolselderij uit de oven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige Kurkuma Cayenne Fenegriek Knoflook Koolraap": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige linzenpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige pompoen uit de oven met gedroogde vijgen, gerookte amandelen en pecannoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige rijst uit de oven met korianderyoghurt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kruidige salade van bakbanaan, appel en kokos": [
+    "Salade",
+    "Vegan"
+  ],
+  "Kruidige verwarmende stoof van knolselderij in dikke tomatensaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Kweepeertaart met een vleugje Midden-Oosten erin": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Labaneya Arabische spinaziesoep met kurkuma, sesam en rijst": [
+    "Soep",
+    "Vegan"
+  ],
+  "Labneh met vijgen en gekarameliseerde walnoten": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Lauwwarme bulgursalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Lauwwarme wortelsalades": [
+    "Salade",
+    "Vegan"
+  ],
+  "Lekkerste auberginedip met ingelegde citroen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Lekkerste limabonen in crispy oil": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Lekkerste Risotto met gepofte knoflook en tomaat": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Libanees pasteitje met bloemkool en aubergine": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Libanese andijviesalade uit de bergen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Libanese Komkommersalade(s)": [
+    "Salade",
+    "Vegan"
+  ],
+  "Libanese linzen": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Libanese prei met zevenkruidenpoeder en grove bulgur": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Libanese romige rode linzensoep met knapperige pitacroûtons": [
+    "Soep",
+    "Vegan"
+  ],
+  "Libanese zevenkruidenpoeder": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Limabonen in kruidige, pikante en frisse olie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Limabonenburgers met pittige paprikasaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Limabonenpaprika dip": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Limabonenpuree met knoflook aïoli": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linguine met boerenworst en puntpaprika": [
+    "Hoofdgerecht",
+    "Beestig Lekker"
+  ],
+  "Linzen in gouden room": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linzen in saus van tahina, tomaten en komijn": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Linzen met champignonragout en ingemaakte citroen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linzen met dadel in een heel kruidige gele room": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linzen met zoete langzaam gegaarde tomaatjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linzen Quinoa salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Linzen à la Aïcha": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Linzen-auberginestoof": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Linzenpilav van engelenhaar": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Loubyeh b'zeit": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Luchtig, knapperig Libanees bulgurbrood met za'atar": [
+    "Brood",
+    "Vegan"
+  ],
+  "Lunch met een ster": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Maftoul, dé Palestijnse klassieker": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Mango spinazie currysalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Marmite & Hot Honey Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Marokkaans gevuld brood met bloemkool": [
+    "Brood",
+    "Vegan"
+  ],
+  "Marokkaanse appel-dadeltaart": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Marokkaanse gesmoorde pikante bleekselderij": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse gratin van aardappelpuree en Groningse blauwsnijmoes (of spinazieandijvie)": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse kruidige hartverwarmende witte bonen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse kruidige pompoen-kokossoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Marokkaanse pompoenpuree met pistache": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse preisoep met kikkererwten croûtons": [
+    "Soep",
+    "Vegan"
+  ],
+  "Marokkaanse sperziebonen à la Fatim-Zahra": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse Spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse spinaziesoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Marokkaanse spitskool met harissa en komijnzaad": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Marokkaanse woestijnsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Marokkaanse wortelsalade met limoen yoghurt": [
+    "Salade",
+    "Vega"
+  ],
+  "Meatball & Cavolo Nero Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "Meiknol in tahinasaus met kikkererwten, komijn, korianderzaad en gerookte paprika": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Meiknolletjes uit de oven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Minestra nera met venkelzaad en pijnboompitten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Mississippi mud pie": [
+    "Dessert",
+    "Vega"
+  ],
+  "Mizuna, peer en kikkererwtensalade met rozenharissa": [
+    "Salade",
+    "Vegan"
+  ],
+  "Molokhieh soep met tuinbonen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Muhammara": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Musakhan van paddenstoelen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Musaqa'a": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Mìjn Libanese 'kaak' met za'atar": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Next level venkel gratin": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "NY-style Elotes Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "NY-style Pepperoni met Vodka Saus Pizza": [
+    "Pizza",
+    "Beestig Lekker"
+  ],
+  "NY-style Sausage & Rapini Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "NY-style White Pie Pizza": [
+    "Pizza",
+    "Vega"
+  ],
+  "Okra's in tomatensaucs": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Okras in tomato sauce": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Olijven, munt, koriander broodjes": [
+    "Brood",
+    "Vegan"
+  ],
+  "Olijvensoep à la Ellen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Orzo salade met borlottibonen, doperwten en rucolapesto": [
+    "Salade",
+    "Vegan"
+  ],
+  "Overheerlijke gemarineerde olijven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Paddenstoelen in een Libanees specerijenmengsel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Paddenstoelen in venkelzaad en arak": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Paddenstoelen risotto met cavolo nero en hazelnoten": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Paddenstoelen, limabonenpuree en kruidige tomatenpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Paella": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Palestijnse cavolo nero salade van Ramsey": [
+    "Salade",
+    "Vegan"
+  ],
+  "Palestijnse linzensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Palestijnse rode biet salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Palestijnse spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Paprikapuree of dip zo je wilt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Parelcouscous (maftoul) met ingelegde citroen, pistache en spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Parelcouscous met bloemkool, pistache en granaatappel": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Parelcouscous met rozijnen en amandelen": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Parelcouscous met spinazie en zongedroogde tomaatjes": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Parelcouscous salade met kaneel, dadelsiroop, spinazie (en witte )asperges": [
+    "Salade",
+    "Vegan"
+  ],
+  "Passata di pomodoro à la Giancarlo": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pasta aglio olio": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pasta bil laban": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pasta con salsa di cipole": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pasta met bloemkoolkrokant": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Pasta met een fluweelgroene saus en oventomaatjes": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pasta met een walnotensaus": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Pasta met gesmoorde radicchio en pijnboompitten": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pasta met snijbiet roomsaus": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Pasta met zachte bleekselderij tomatensaus": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Pasta à la Katrin": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Pastasalade met baies roses": [
+    "Salade",
+    "Vegan"
+  ],
+  "Pastilla à la Fati": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pastinaak frites": [
+    "Snack",
+    "Vegan"
+  ],
+  "Pastinaak in sinaasappel-harissasiroop": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pastinaak met tahinasaus en granaatappelpitjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pastinaaksoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Patatas salatasi": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Perzische gekaramelliseerde venkelsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Perzische rijsttaart met kruidige vullingen verrassende topping": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Pesto van palmkool (onder meer dan hè)": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Pikante aardappelkoekjes": [
+    "Snack",
+    "Vegan"
+  ],
+  "Pikante Bieten Beignets": [
+    "Snack",
+    "Vegan"
+  ],
+  "Pikante bulgursoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Pikante groene olijven in gegrilde paprika": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pikante wortelpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pikante za'atar crackers": [
+    "Brood",
+    "Vegan"
+  ],
+  "Pikante zoete bulgur met gegrilde groene asperges": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pimientos de Padron met tahinsaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pissaladière": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pittige Bulgursalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Pittige Marokkaanse aardappelsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Pittige pompoen uit de oven": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pizza Caprese": [
+    "Pizza",
+    "Vega"
+  ],
+  "Pizzadeeg": [
+    "Pizza",
+    "Vegan"
+  ],
+  "Pjadra": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Platano als ontbijt": [
+    "Ontbijt",
+    "Vegan"
+  ],
+  "Pofaardappel met yoghurt fenegriek en steranijsbosuitjes": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pompoen cashewnotenpastei": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pompoen kibbeh met macademianoten en gecarameliseerde ui": [
+    "Snack",
+    "Vegan"
+  ],
+  "Pompoen-wortel sinaasappelsoep à la Astrid": [
+    "Soep",
+    "Vegan"
+  ],
+  "Pompoenbrood met cashewnoten en sesam": [
+    "Brood",
+    "Vegan"
+  ],
+  "Pompoenpilav": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pompoenpitten à la oma Billy": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Pompoenrisotto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Pompoensoep met gember(siroop) en kokosmelk": [
+    "Soep",
+    "Vegan"
+  ],
+  "Portabello gevuld met risotto van prei en funghi porcini": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Prei - mosterdsoep met kokosmelk": [
+    "Soep",
+    "Vegan"
+  ],
+  "Prei uit de oven die smelt op je tong met preiroom": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Prei uit de oven in saffraanvinaigrette en pikante kruim": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Prei-mosterdsoep met szechuan peper": [
+    "Soep",
+    "Vegan"
+  ],
+  "Prei-pistache soep met sumac en sinaasappel": [
+    "Soep",
+    "Vegan"
+  ],
+  "Quinoa Risotto met Paddestoelen": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Quinoa salade met kruidige wortel en palmkool": [
+    "Salade",
+    "Vegan"
+  ],
+  "Quinoa venkel salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Quinoasalade met courgette en...": [
+    "Salade",
+    "Vegan"
+  ],
+  "Radicchio peer salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Radicchio salade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Radicchio salade met dadels en pompoenpitten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Ramen noodles soep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Red hot chili bloemkool": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rendang": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rijst met linzen met harissa aubergine": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Rijst à la Peninah": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rijstsalade 'to die for'": [
+    "Salade",
+    "Vegan"
+  ],
+  "Rijstsalade van tuinbonen, zuurbessen, cranberries en dille": [
+    "Salade",
+    "Vegan"
+  ],
+  "Risotto al salto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Risotto met artisjokharten en citroenzest": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Risotto met karwijzaad, gefrituurde zuurkool en mosterd(ijs)": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Risotto à la Milanese": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Roasted Mushroom Pizza Bianca": [
+    "Pizza",
+    "Vega"
+  ],
+  "Rode biet in sinaasappelsiroop": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rode biet met tijmsalie en hazelnoten krokant": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rode biet op een citroen-crème met pijnboompitten en munt": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rode bieten met pit": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rode bietensalade in een tahina dressing met gefrituurde bosui": [
+    "Salade",
+    "Vega"
+  ],
+  "Rode bietensalade met walnoot-dadelpesto en sinaasappel": [
+    "Salade",
+    "Vegan"
+  ],
+  "Rode linzensoep met tamarinde": [
+    "Soep",
+    "Vegan"
+  ],
+  "Rode paprika, knolselderij en tahinasoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Rode paprikapasta (o-ve-ral lekker bij)": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Romige aubergine-tomatensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige courgettesoep met knapperige bulgur topping": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige knoflook-amandelsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige knoflooksoep met harissa": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige kruidige rijst in witte koolblad": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Romige paddenstoelensoep met tahina en ouzo of arak": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige tomatensoep met gember, citroengras en citroenblad": [
+    "Soep",
+    "Vegan"
+  ],
+  "Romige Venkel-Knoflookrisotto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Romige witte kool - amandelsoep met venkelzaad en zuurbessen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Roumania à la Nazeera": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Roumaniya fetteh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Rucola Meloen salade": [
+    "Salade",
+    "Vega"
+  ],
+  "Rucola soep, ja echt": [
+    "Soep",
+    "Vegan"
+  ],
+  "Sabayech (spinazie) à la Fati": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Salad Pizza ft. Gabagool": [
+    "Pizza",
+    "Vega"
+  ],
+  "Salade met artisjok, avocado en tomaat": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade met aubergine dressing en peterselie olie en shatta": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade met onvergetelijke dressing van zongedroogde tomaten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade met peer, linzen, zuurbessen en balsamicosiroop": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van artisjok, doperwten, ingelegde citroen, ras el hanout": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van biet, pistache, granaatappelmelasse en zuurbessen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van boerenkool, biet, appel en gekarameliseerde walnoot": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van boerenkool, noten in sojaagave en appel uit de oven": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van courgette, krieltje, walnoot en kruidigezoete ui": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van gegrilde courgetteslierten, limabonen, walnoot en granaatappelmelasse": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van limabonenpuree, sinaasappel, hazelnoten en ingelegde aubergine": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van limabonenpuree, snijbiet en wel heel knapperige uien": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van olijven en noten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van snijbiet, gemarineerde krenten en pijnboompitten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade van tomaat en munt": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade verte": [
+    "Salade",
+    "Vegan"
+  ],
+  "Salade à la le frigo": [
+    "Salade",
+    "Vega"
+  ],
+  "Saladebootje met baba ganoush en shatta": [
+    "Salade",
+    "Vegan"
+  ],
+  "Saladebootje met verse kruiden, sumac en tahini dressing": [
+    "Salade",
+    "Vegan"
+  ],
+  "Sappige parelcouscous met gegrilde kikkererwten, aardpeer en paprika": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Seven shades of green": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sinaasappelrijst": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sinaasappelsalade met zwarte olijven": [
+    "Salade",
+    "Vegan"
+  ],
+  "Sjalot gemarineerd in granaatappelmelasse en kaneel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Smeuïge linzen, spinazie, tomaat in mosterdsaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Snijbiet in witte wijnsaus met tahinasaus erover heen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Snijbiet met linzen, champignons en aardappel": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Soedanese auberginestoof": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Spaghetti met boerenkoolpesto en cashewnoten": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Spaghetti met dé truffelsaus": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Spaghetti à la Trapanese": [
+    "Hoofdgerecht",
+    "Vega"
+  ],
+  "Spannende en zalvende orzo met boerenkool, tomaat en meer...": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Spectaculaire Vijgensalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Sperziebonen ai ai ai zo goddelijk lekker": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sperziebonen in tamarinde-tomatensaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sperziebonen op een heerlijk bedje en kruimige deken": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sperziebonensalade met chermoula": [
+    "Salade",
+    "Vegan"
+  ],
+  "Spinazie en black eyed peas met Szechuan peper": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spinazie in yoghurtsaus met walnoot en amandel": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Spinazie met tomaten en amandelen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spinazie met za'atar kastanjechampignons": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spinazie wondergerecht": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spinazie-koriander risotto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Spinaziedip": [
+    "Saus & Dip",
+    "Vega"
+  ],
+  "Spinaziepilav": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Spinaziesalade met friszuurzoet gemarineerde dadel, amandelen en knapperige pita": [
+    "Salade",
+    "Vegan"
+  ],
+  "Spinaziesoep en meer met sojapaddenstoelen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Spinazietaartjes met gecarameliseerde ui en walnoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spitskool gebakken in harissa, druiven en zuurbessen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spitskool met gedroogde vijg en hummus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spitskool met gemberroom en drakenolie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spitskool met sumac krenten en spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spruitjes in een sjalot sherry saus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spruitjes in salie en hazelnoten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spruitjes in witte wijn én een fluwelen uiensaus": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Spruitjes met rode druiven en sherry": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Spruitjes op bedje van cashew-tahinasaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Stevige kibbeh met prei en aardappel en hét klassieke kibbeh specerijenmengsel": [
+    "Snack",
+    "Vegan"
+  ],
+  "Sticky tempeh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Sticky wortels": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Stoof van snijbiet, kikkererwt, tomaat in tamarindesaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Syrische spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tabouleh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tagine hartig en zoet": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Tagine met Pruimen en Amandelen": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Tagine met tuinbonen, artisjok en broccoli": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Tarte Tatin aux Abricots": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Thaise currysoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Tiramisu": [
+    "Dessert",
+    "Vegan"
+  ],
+  "Tomaat granaatappelsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Tomaatjes in tahina - muntsaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tomaten chili relish": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tomatenpilav": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Tomatensalade met gebakken citroen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Tomatensalade op auberginepuree met tamarinde": [
+    "Salade",
+    "Vegan"
+  ],
+  "Tomatensoep met borlottibonen en venkelzaad": [
+    "Soep",
+    "Vegan"
+  ],
+  "Tot 'op het bot' gegaarde pikante courgette in knoflookpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Truffelbitterballen to die for": [
+    "Snack",
+    "Vega"
+  ],
+  "Tuinbonen & artisjokken": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tuinbonen in Libanese romige citroenknoflooksaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Tuinbonensalade op bedje van tomatencoulis": [
+    "Salade",
+    "Vegan"
+  ],
+  "Tunesische spinazie": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Turkse pittige paprikapuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Uien uit de oven met sinaasappelsiroop en tijm": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Venkel in spinazie-cashew saus en verse koriander": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Venkel met Saffraancroûtons": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Venkelsoep met ingelegde citroen en zwarte olijven": [
+    "Soep",
+    "Vegan"
+  ],
+  "Vermicellirijst": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Verrassende walnootdip": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Verrukkelijke Knapperige Aubergine": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Verrukkelijke muhammar rijst met ingelegde dadels": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Verslavend lekkere kruidige sjalotten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Vietnamese loempia": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Vijgenhummus": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Volle rode saffraanrijst, fatteh en groenten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Walnootsoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Warak enab": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Warme spinazie yoghurt soep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Warme yoghurt tuinbonensoep met citroen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Warme, ja echt, warme hummus met gebakken brood": [
+    "Brood",
+    "Vegan"
+  ],
+  "Watermeloen tomaatsalade met kappertjes en uitgebakken brood": [
+    "Salade",
+    "Vegan"
+  ],
+  "Watermeloensalade": [
+    "Salade",
+    "Vega"
+  ],
+  "Wijnbladerentaart gevuld met romige en kruidige risotto": [
+    "Hoofdgerecht",
+    "Vegan"
+  ],
+  "Wilde spinazie met rozijnen en pijnboompitten": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Winter tabouleh": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Winterse citrussalade met frisse labneh": [
+    "Salade",
+    "Vega"
+  ],
+  "Witlofsalade": [
+    "Salade",
+    "Vegan"
+  ],
+  "Wortel uit de oven met komijn": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Wortelsalade met cardamom, gember en citroen": [
+    "Salade",
+    "Vegan"
+  ],
+  "Za'atar crackers": [
+    "Brood",
+    "Vegan"
+  ],
+  "Zachte soep uit Imlil": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zalige geroosterde aubergine in tamarindesaus": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zalm op Spruiten met Noedelsalade": [
+    "Hoofdgerecht",
+    "Beestig Lekker"
+  ],
+  "Zeer serieus genomen sperziebonen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zelf Harissa maken": [
+    "Saus & Dip",
+    "Vegan"
+  ],
+  "Zelf ingelegde citroenen": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zoet-pikante tomaten, borlottibonen soep voor koude dagen": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zoete aardappel in tomaten-limoensaus en kardemom": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zoete aardappel peer soep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zoete aardappelsalade met pecannoten": [
+    "Salade",
+    "Vegan"
+  ],
+  "Zoete paprikasoep met zwarte olijven": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zoete Tomatenpuree": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zoete uiensoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zoeteaardappelkoekjes met harissa": [
+    "Snack",
+    "Vega"
+  ],
+  "Zoetzure romige zuurkoolschotel": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Zomers spinaziestamppotje": [
+    "Bijgerecht",
+    "Vegan"
+  ],
+  "Zomerse Arabische courgettesoep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zondagmiddag Zaynab soep": [
+    "Soep",
+    "Vegan"
+  ],
+  "Zuppa di Pomodoro": [
+    "Bijgerecht",
+    "Vega"
+  ],
+  "Zwarte rijstsalade met pikante courgette": [
+    "Salade",
+    "Vegan"
+  ]
 }
