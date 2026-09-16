@@ -12,18 +12,19 @@ function getRecipes() {
   const dir = path.join(process.cwd(), "public", "recepten");
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".pdf"));
 
-  // Load categories
+  // Load categories (supports both "Cat" and ["Cat1", "Cat2"] values)
   const catPath = path.join(process.cwd(), "public", "recipe-categories.json");
-  const categories: Record<string, string> = JSON.parse(
+  const categories: Record<string, string | string[]> = JSON.parse(
     fs.readFileSync(catPath, "utf-8")
   );
 
   return files
-    .map((f) => ({
-      name: f.replace(/\.pdf$/, ""),
-      file: f,
-      category: categories[f.replace(/\.pdf$/, "")] || "Bijgerecht",
-    }))
+    .map((f) => {
+      const name = f.replace(/\.pdf$/, "");
+      const raw = categories[name];
+      const cats = Array.isArray(raw) ? raw : [raw || "Bijgerecht"];
+      return { name, file: f, categories: cats };
+    })
     .sort((a, b) =>
       a.name.replace(/^[^a-zA-Z]+/, "").localeCompare(
         b.name.replace(/^[^a-zA-Z]+/, ""),

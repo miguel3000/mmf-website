@@ -5,7 +5,7 @@ import { useState, useMemo } from "react";
 interface Recipe {
   name: string;
   file: string;
-  category: string;
+  categories: string[];
 }
 
 const CATEGORY_ORDER = [
@@ -22,6 +22,9 @@ const CATEGORY_ORDER = [
   "Ontbijt",
   "Drank",
   "Conserveren",
+  "Vegan",
+  "Vega",
+  "Beestig Lekker",
 ];
 
 export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
@@ -30,7 +33,7 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
 
   // Only show categories that have recipes
   const availableCategories = useMemo(() => {
-    const cats = new Set(recipes.map((r) => r.category));
+    const cats = new Set(recipes.flatMap((r) => r.categories));
     return CATEGORY_ORDER.filter((c) => c === "Alles" || cats.has(c));
   }, [recipes]);
 
@@ -40,7 +43,7 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
         .toLowerCase()
         .includes(search.toLowerCase());
       const matchesCategory =
-        activeCategory === "Alles" || r.category === activeCategory;
+        activeCategory === "Alles" || r.categories.includes(activeCategory);
       return matchesSearch && matchesCategory;
     });
   }, [recipes, search, activeCategory]);
@@ -63,7 +66,7 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
             const count =
               cat === "Alles"
                 ? recipes.length
-                : recipes.filter((r) => r.category === cat).length;
+                : recipes.filter((r) => r.categories.includes(cat)).length;
             return (
               <button
                 key={cat}
