@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import RecipeList from "./RecipeList";
+import RecipeUpload from "./RecipeUpload";
 
 export const metadata: Metadata = {
   title: "Recepten",
@@ -43,8 +44,9 @@ export default function ReceptenPage() {
           RECEPTEN
         </h1>
         <p className="mt-3 text-secondary dark:text-white/50 text-sm">
-          Receptenverzameling — {recipes.length} recepten
+          Zoek op titel of ingrediënt — {recipes.length} recepten
         </p>
+        <RecipeUpload />
       </section>
 
       <RecipeList recipes={recipes} />

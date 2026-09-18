@@ -55,7 +55,7 @@ export default function RecipeList({ recipes }: { recipes: Recipe[] }) {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Zoek een recept..."
+          placeholder="Zoek op titel of ingrediënt..."
           className="w-full px-4 py-2.5 border border-border dark:border-border-dark rounded-lg text-sm text-primary dark:text-white/90 bg-white dark:bg-surface-dark placeholder:text-muted dark:placeholder:text-white/30 focus:outline-none focus:border-secondary dark:focus:border-white/40 transition-colors"
         />
 
