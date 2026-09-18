@@ -2,19 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 
-declare global {
-  interface Window {
-    turnstile?: {
-      render: (
-        container: string | HTMLElement,
-        options: { sitekey: string; callback: (token: string) => void; theme?: string }
-      ) => string;
-      reset: (widgetId: string) => void;
-      remove: (widgetId: string) => void;
-    };
-  }
-}
-
 export default function RecipeUpload() {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "uploading" | "success" | "error">("idle");

@@ -11,6 +11,7 @@ declare global {
         options: { sitekey: string; callback: (token: string) => void; theme?: string }
       ) => string;
       reset: (widgetId: string) => void;
+      remove: (widgetId: string) => void;
     };
   }
 }
