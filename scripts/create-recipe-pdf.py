@@ -19,7 +19,7 @@ import os
 import sys
 
 try:
-    import fitz  # PyMuPDF
+    import pymupdf as fitz  # PyMuPDF
 except ImportError:
     print("PyMuPDF not installed. Run: pip install pymupdf")
     sys.exit(1)
