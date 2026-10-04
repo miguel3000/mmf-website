@@ -3,6 +3,7 @@ import path from "path";
 import type { Metadata } from "next";
 import RecipeList from "./RecipeList";
 import RecipeUpload from "./RecipeUpload";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Recepten",
@@ -39,6 +40,7 @@ export default function ReceptenPage() {
 
   return (
     <div className="min-h-screen">
+      <ThemeToggle />
       <section className="max-w-2xl mx-auto px-6 pt-28 pb-6 text-center">
         <h1 className="font-heading text-5xl sm:text-6xl tracking-wider text-primary dark:text-white/90">
           RECEPTEN
