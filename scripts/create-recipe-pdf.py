@@ -15,6 +15,7 @@ If --output is omitted, saves to public/recepten/<title>.pdf
 """
 
 import argparse
+import math
 import os
 import sys
 
@@ -133,7 +134,7 @@ def create_recipe_pdf(
     COL_W = (TEXT_WIDTH - COL_GAP) / 2
     COL1_X = MARGIN_LEFT
     COL2_X = MARGIN_LEFT + COL_W + COL_GAP
-    ING_LINE_H = 17.0
+    ING_LINE_H = 16.0
     BULLET_OFFSET = 17.0  # offset from column x to ingredient text
 
     # Split ingredients into two columns, keeping --- headers --- with their group
@@ -194,7 +195,7 @@ def create_recipe_pdf(
         else:
             col2_end_y = cy
 
-    y = max(col1_end_y, col2_end_y) + 12
+    y = max(col1_end_y, col2_end_y) + 8
 
     # --- Bereiding header ---
     if y > PAGE_H - 80:
@@ -214,7 +215,7 @@ def create_recipe_pdf(
         fitz.Point(283.46, y + 8),
         color=COLOR_LINE, width=0.5,
     )
-    y += 22
+    y += 18
 
     # --- Steps ---
     step_text_width = MARGIN_RIGHT - STEP_INDENT
@@ -238,15 +239,15 @@ def create_recipe_pdf(
             fontname="helv", fontsize=FONT_BODY_SIZE,
             color=COLOR_BODY, align=fitz.TEXT_ALIGN_LEFT,
         )
-        # Calculate how much vertical space the text used
-        # rc < 0 means overflow, otherwise it's remaining space
-        text_lines = len(step) / (step_text_width / (FONT_BODY_SIZE * 0.5))
-        approx_lines = max(1, int(text_lines) + 1)
-        y += max(LINE_HEIGHT, approx_lines * LINE_HEIGHT) + 5
+        # Calculate actual height: measure text width per char, figure out line wraps
+        char_w = font_reg.text_length("x", fontsize=FONT_BODY_SIZE)
+        chars_per_line = int(step_text_width / char_w)
+        num_lines = max(1, math.ceil(len(step) / chars_per_line)) if chars_per_line > 0 else 1
+        y += num_lines * LINE_HEIGHT + 2
 
     # --- Notes (optional) ---
     if notes:
-        y += 10
+        y += 6
         if y > PAGE_H - 80:
             page = doc.new_page(width=PAGE_W, height=PAGE_H)
             y = 30
