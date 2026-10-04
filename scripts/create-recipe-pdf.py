@@ -123,27 +123,78 @@ def create_recipe_pdf(
     # Underline
     page.draw_line(
         fitz.Point(MARGIN_LEFT, y + 8),
-        fitz.Point(283.46, y + 8),
+        fitz.Point(MARGIN_RIGHT, y + 8),
         color=COLOR_LINE, width=0.5,
     )
     y += 18
 
-    # --- Ingredient list ---
-    for ing in ingredients:
-        if y > PAGE_H - 50:
-            page = doc.new_page(width=PAGE_W, height=PAGE_H)
-            y = 30
-        page.insert_text(
-            fitz.Point(MARGIN_LEFT, y + FONT_BODY_SIZE),
-            "-  ", fontname="helv", fontsize=FONT_BODY_SIZE, color=COLOR_BODY,
-        )
-        page.insert_text(
-            fitz.Point(48.2, y + FONT_BODY_SIZE),
-            ing, fontname="helv", fontsize=FONT_BODY_SIZE, color=COLOR_BODY,
-        )
-        y += 17.0
+    # --- Ingredient list (2 columns) ---
+    COL_GAP = 14
+    COL_W = (TEXT_WIDTH - COL_GAP) / 2
+    COL1_X = MARGIN_LEFT
+    COL2_X = MARGIN_LEFT + COL_W + COL_GAP
+    ING_LINE_H = 17.0
+    BULLET_OFFSET = 17.0  # offset from column x to ingredient text
 
-    y += 12
+    # Split ingredients into two columns, keeping --- headers --- with their group
+    # Find a balanced split point that doesn't break a group
+    def split_ingredients(items):
+        # Build groups: each group starts with an optional header followed by ingredients
+        groups = []
+        current = []
+        for item in items:
+            if item.startswith("---") and current:
+                groups.append(current)
+                current = [item]
+            else:
+                current.append(item)
+        if current:
+            groups.append(current)
+
+        total = len(items)
+        half = total / 2
+        col1 = []
+        for g in groups:
+            if len(col1) + len(g) <= half + 1 or not col1:
+                col1.extend(g)
+            else:
+                break
+        col2 = items[len(col1):]
+        return col1, col2
+
+    col1_items, col2_items = split_ingredients(ingredients)
+
+    ing_y_start = y
+    for col_x, col_items in [(COL1_X, col1_items), (COL2_X, col2_items)]:
+        cy = ing_y_start
+        for ing in col_items:
+            if cy > PAGE_H - 50:
+                page = doc.new_page(width=PAGE_W, height=PAGE_H)
+                cy = 30
+            if ing.startswith("---") and ing.endswith("---"):
+                header = ing.strip("- ").strip()
+                cy += 4
+                page.insert_text(
+                    fitz.Point(col_x, cy + FONT_BODY_SIZE),
+                    header, fontname="hebo", fontsize=FONT_BODY_SIZE, color=COLOR_SECTION,
+                )
+                cy += ING_LINE_H
+            else:
+                page.insert_text(
+                    fitz.Point(col_x, cy + FONT_BODY_SIZE),
+                    "-  ", fontname="helv", fontsize=FONT_BODY_SIZE, color=COLOR_BODY,
+                )
+                page.insert_text(
+                    fitz.Point(col_x + BULLET_OFFSET, cy + FONT_BODY_SIZE),
+                    ing, fontname="helv", fontsize=FONT_BODY_SIZE, color=COLOR_BODY,
+                )
+                cy += ING_LINE_H
+        if col_x == COL1_X:
+            col1_end_y = cy
+        else:
+            col2_end_y = cy
+
+    y = max(col1_end_y, col2_end_y) + 12
 
     # --- Bereiding header ---
     if y > PAGE_H - 80:
