@@ -12,7 +12,7 @@ const teamSkillPercentages = [
   [40, 60, 85],
   [90, 95, 100],
   [100, 70, 90],
-  [75, 80, 100],
+  [0, 13, 100],
 ];
 
 export default function HomePage() {

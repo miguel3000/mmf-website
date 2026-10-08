@@ -1,0 +1,27 @@
+{
+  "name": "Michiel Maessen Fotografie",
+  "short_name": "Recepten",
+  "start_url": "/recepten",
+  "id": "/recepten",
+  "icons": [
+    {
+      "src": "/recepten/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/recepten/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/recepten/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#333333",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
