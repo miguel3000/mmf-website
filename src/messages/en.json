@@ -19,7 +19,7 @@
   },
   "home": {
     "title": "THE TEAM",
-    "subtitle": "Three Michiels. One mission. Images that stick."
+    "subtitle": "Four Michiels. One mission. Images and bytes that stick."
   },
   "team": {
     "michiel1": {
@@ -33,6 +33,10 @@
     "michiel3": {
       "role": "The Retoucher",
       "description": "Team member since 2008. Perfectionist who checks every pixel. Runs on coffee and deadlines."
+    },
+    "michiel4": {
+      "role": "The Digital One",
+      "description": "100% artificial, assembled from the other three. Builds websites and custom projects — from pouleposition.nl to pjprofessionals.nl. Runs on electricity and enthusiasm."
     },
     "skills": {
       "coffee": "Coffee",

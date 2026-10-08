@@ -19,7 +19,7 @@
   },
   "home": {
     "title": "HET TEAM",
-    "subtitle": "Drie Michiels. Eén missie. Beelden die blijven hangen."
+    "subtitle": "Vier Michiels. Eén missie. Beelden en bytes die blijven hangen."
   },
   "team": {
     "michiel1": {
@@ -33,6 +33,10 @@
     "michiel3": {
       "role": "De Beeldbewerker",
       "description": "Medewerker sinds 2008. Perfectionist die elke pixel controleert. Leeft op koffie en deadlines."
+    },
+    "michiel4": {
+      "role": "De Digitale",
+      "description": "100% kunstmatig, samengesteld uit de andere drie. Bouwt websites en maatwerkprojecten — van pouleposition.nl tot pjprofessionals.nl. Draait op stroom en enthousiasme."
     },
     "skills": {
       "coffee": "Koffie",

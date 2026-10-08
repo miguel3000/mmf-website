@@ -5,17 +5,19 @@ const teamImages = [
   "/images/team/Michieldeboekhouder.jpg",
   "/images/team/Michiel Maessen fotograaf.jpg",
   "/images/team/Michieldebeelbewerker.jpg",
+  "/images/team/Michieldedigitale.jpg",
 ];
 
 const teamSkillPercentages = [
   [40, 60, 85],
   [90, 95, 100],
   [100, 70, 90],
+  [75, 80, 100],
 ];
 
 export default function HomePage() {
   const t = useTranslations();
-  const memberKeys = ["michiel1", "michiel2", "michiel3"] as const;
+  const memberKeys = ["michiel1", "michiel2", "michiel3", "michiel4"] as const;
   const skillKeys = ["coffee", "fun", "motivation"] as const;
 
   const teamMembers = memberKeys.map((key, i) => ({
@@ -43,7 +45,7 @@ export default function HomePage() {
       </section>
 
       <section className="max-w-6xl mx-auto px-6 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, i) => (
             <ProfileCard key={i} {...member} />
           ))}
