@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 
 interface SkillBar {
@@ -8,7 +9,7 @@ interface SkillBar {
 interface ProfileCardProps {
   name: string;
   role: string;
-  description: string;
+  description: ReactNode;
   imageSrc: string;
   skills: SkillBar[];
 }

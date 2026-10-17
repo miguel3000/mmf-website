@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 const partnerLinks = [
+  { name: "Etalux", url: "https://www.etalux.nl" },
   { name: "MsMode", url: "https://www.msmode.nl" },
   { name: "Moodies", url: "https://moodiesundies.com" },
   { name: "Maicos Automotive", url: "https://www.maicos.nl" },

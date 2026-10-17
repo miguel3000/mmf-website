@@ -20,10 +20,16 @@ export default function HomePage() {
   const memberKeys = ["michiel1", "michiel2", "michiel3", "michiel4"] as const;
   const skillKeys = ["coffee", "fun", "motivation"] as const;
 
+  const linkClasses = "underline hover:text-primary dark:hover:text-white/90 transition-colors";
+
   const teamMembers = memberKeys.map((key, i) => ({
     name: "MICHIEL",
     role: t(`team.${key}.role`),
-    description: t(`team.${key}.description`),
+    description: key === "michiel4"
+      ? t.rich(`team.${key}.description`, {
+          pp: (chunks) => <a href="https://www.pouleposition.nl" target="_blank" rel="noopener noreferrer" className={linkClasses}>{chunks}</a>,
+        })
+      : t(`team.${key}.description`),
     imageSrc: teamImages[i],
     skills: skillKeys.map((sk, j) => ({
       label: t(`team.skills.${sk}`),
