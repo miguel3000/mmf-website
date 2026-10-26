@@ -110,8 +110,20 @@
     "comingSoon": "Coming soon — the first 360° sets are currently being shot.",
     "sets": {
       "bad-bunny-adidas": {
-        "title": "BAD BUNNY x ADIDAS",
-        "description": "360° product photography of the Bad Bunny x Adidas sneaker."
+        "title": "BAD BUNNY x ADIDAS for Foot Locker",
+        "description": "360° product photography of the Bad Bunny x Adidas sneaker for Foot Locker."
+      },
+      "adidas-samba-og": {
+        "title": "ADIDAS SAMBA OG for Foot Locker",
+        "description": "360° product photography of the Adidas Samba OG sneaker for Foot Locker."
+      },
+      "anthony-edwards-3": {
+        "title": "ANTHONY EDWARDS 3 ADIDAS for Foot Locker",
+        "description": "360° product photography of the Anthony Edwards 3 Adidas sneaker for Foot Locker."
+      },
+      "new-balance-abzorb-2000": {
+        "title": "NEW BALANCE ABZORB 2000 for Foot Locker",
+        "description": "360° product photography of the New Balance Abzorb 2000 sneaker for Foot Locker."
       }
     }
   },
