@@ -28,8 +28,8 @@ export default function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Skip i18n for /recepten
-  if (lower.startsWith("/recepten")) {
+  // Skip i18n for /recepten, /sitemap.xml, /robots.txt
+  if (lower.startsWith("/recepten") || lower === "/sitemap.xml" || lower === "/robots.txt") {
     return NextResponse.next();
   }
 
