@@ -7,6 +7,8 @@ interface SpinViewProps {
   folder: string;
   frameCount: number;
   prefix?: string;
+  suffix?: string;
+  padDigits?: number;
   extension?: string;
   width?: number;
   height?: number;
@@ -18,6 +20,8 @@ export default function SpinView({
   folder,
   frameCount,
   prefix = "frame-",
+  suffix = "",
+  padDigits = 3,
   extension = "jpg",
   width = 800,
   height = 800,
@@ -32,8 +36,8 @@ export default function SpinView({
   const containerRef = useRef<HTMLDivElement>(null);
   const autoplayRef = useRef<ReturnType<typeof setInterval>>();
 
-  const pad = (n: number) => String(n + 1).padStart(3, "0");
-  const src = (i: number) => `${folder}/${prefix}${pad(i)}.${extension}`;
+  const pad = (n: number) => String(n + 1).padStart(padDigits, "0");
+  const src = (i: number) => `${folder}/${prefix}${pad(i)}${suffix}.${extension}`;
 
   useEffect(() => {
     let count = 0;

@@ -105,7 +105,13 @@
     "subtitle": "Interactive 360° product photography. Drag to rotate.",
     "metaTitle": "360° Product Photography — Michiel Maessen Photography",
     "metaDescription": "Interactive 360° product photography by Michiel Maessen. View products from every angle.",
-    "comingSoon": "Coming soon — the first 360° sets are currently being shot."
+    "comingSoon": "Coming soon — the first 360° sets are currently being shot.",
+    "sets": {
+      "bad-bunny-adidas": {
+        "title": "BAD BUNNY x ADIDAS",
+        "description": "360° product photography of the Bad Bunny x Adidas sneaker."
+      }
+    }
   },
   "links": {
     "title": "LINKS"

@@ -20,11 +20,24 @@ const spinSets: {
   slug: string;
   folder: string;
   frameCount: number;
+  prefix?: string;
+  suffix?: string;
+  padDigits?: number;
+  extension?: string;
   width?: number;
   height?: number;
 }[] = [
-  // Add spin sets here as you shoot them:
-  // { slug: "product-name", folder: "/images/360/product-name", frameCount: 36 },
+  {
+    slug: "bad-bunny-adidas",
+    folder: "/images/360/Bad Bunny Adidas",
+    frameCount: 40,
+    prefix: "314312744304_",
+    suffix: "_spin",
+    padDigits: 2,
+    extension: "png",
+    width: 2000,
+    height: 2000,
+  },
 ];
 
 export default function SpinPage() {
@@ -54,6 +67,10 @@ export default function SpinPage() {
                 <SpinView
                   folder={set.folder}
                   frameCount={set.frameCount}
+                  prefix={set.prefix}
+                  suffix={set.suffix}
+                  padDigits={set.padDigits}
+                  extension={set.extension}
                   width={set.width}
                   height={set.height}
                 />
