@@ -39,6 +39,10 @@ export default function SpinView({
   const loadedRef = useRef(false);
   const loadingRef = useRef<HTMLDivElement>(null);
   const autoplayRef = useRef<ReturnType<typeof setInterval>>(undefined);
+  const velocityRef = useRef(0);
+  const lastMoveX = useRef(0);
+  const lastMoveTime = useRef(0);
+  const momentumRef = useRef<number>(0);
 
   const pad = (n: number) => String(n + 1).padStart(padDigits, "0");
   const getSrc = useCallback(
@@ -95,6 +99,12 @@ export default function SpinView({
 
     const updateFrame = (clientX: number) => {
       if (!draggingRef.current) return;
+      const now = performance.now();
+      const dt = now - lastMoveTime.current;
+      if (dt > 0) velocityRef.current = (clientX - lastMoveX.current) / dt;
+      lastMoveX.current = clientX;
+      lastMoveTime.current = now;
+
       const rect = container.getBoundingClientRect();
       const delta = clientX - dragStartX.current;
       const sensitivity = rect.width / frameCount;
@@ -106,23 +116,54 @@ export default function SpinView({
       }
     };
 
+    const startMomentum = () => {
+      cancelAnimationFrame(momentumRef.current);
+      let v = velocityRef.current;
+      const friction = 0.95;
+      const rect = container.getBoundingClientRect();
+      const sensitivity = rect.width / frameCount;
+      let residual = 0;
+
+      const tick = () => {
+        if (draggingRef.current || Math.abs(v) < 0.005) return;
+        v *= friction;
+        residual += v * 16;
+        const frameDelta = Math.trunc(residual / sensitivity);
+        if (frameDelta !== 0) {
+          residual -= frameDelta * sensitivity;
+          const newFrame = ((frameRef.current - frameDelta) % frameCount + frameCount) % frameCount;
+          frameRef.current = newFrame;
+          drawFrame(newFrame);
+        }
+        momentumRef.current = requestAnimationFrame(tick);
+      };
+      momentumRef.current = requestAnimationFrame(tick);
+    };
+
+    const onStart = (clientX: number) => {
+      cancelAnimationFrame(momentumRef.current);
+      draggingRef.current = true;
+      dragStartX.current = clientX;
+      dragStartFrame.current = frameRef.current;
+      velocityRef.current = 0;
+      lastMoveX.current = clientX;
+      lastMoveTime.current = performance.now();
+    };
+
     const onMouseDown = (e: MouseEvent) => {
       e.preventDefault();
-      draggingRef.current = true;
-      dragStartX.current = e.clientX;
-      dragStartFrame.current = frameRef.current;
+      onStart(e.clientX);
       container.style.cursor = "grabbing";
     };
     const onTouchStart = (e: TouchEvent) => {
-      draggingRef.current = true;
-      dragStartX.current = e.touches[0].clientX;
-      dragStartFrame.current = frameRef.current;
+      onStart(e.touches[0].clientX);
     };
     const onMouseMove = (e: MouseEvent) => updateFrame(e.clientX);
     const onTouchMove = (e: TouchEvent) => updateFrame(e.touches[0].clientX);
     const onEnd = () => {
       draggingRef.current = false;
       container.style.cursor = "grab";
+      startMomentum();
     };
 
     container.addEventListener("mousedown", onMouseDown);
