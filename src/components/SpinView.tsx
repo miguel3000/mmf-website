@@ -34,7 +34,7 @@ export default function SpinView({
   const dragStartX = useRef(0);
   const dragStartFrame = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
-  const autoplayRef = useRef<ReturnType<typeof setInterval>>();
+  const autoplayRef = useRef<ReturnType<typeof setInterval>>(undefined);
 
   const pad = (n: number) => String(n + 1).padStart(padDigits, "0");
   const src = (i: number) => `${folder}/${prefix}${pad(i)}${suffix}.${extension}`;
