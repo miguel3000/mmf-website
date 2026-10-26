@@ -119,7 +119,7 @@ export default function SpinView({
         priority={frame === 0}
         draggable={false}
       />
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-muted dark:text-white/30 pointer-events-none">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-primary dark:text-white/70 pointer-events-none">
         ↔ drag to rotate
       </div>
     </div>
