@@ -12,6 +12,7 @@ interface SpinViewProps {
   extension?: string;
   width?: number;
   height?: number;
+  hint?: string;
   autoplay?: boolean;
   autoplaySpeed?: number;
 }
@@ -23,6 +24,7 @@ export default function SpinView({
   suffix = "",
   padDigits = 3,
   extension = "jpg",
+  hint,
   width = 800,
   height = 800,
   autoplay = false,
@@ -98,6 +100,7 @@ export default function SpinView({
   }, [dragging, handleMove]);
 
   return (
+    <>
     <div
       ref={containerRef}
       className="relative select-none overflow-hidden bg-surface dark:bg-surface-dark rounded-lg"
@@ -119,9 +122,12 @@ export default function SpinView({
         priority={frame === 0}
         draggable={false}
       />
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-primary dark:text-white/70 pointer-events-none">
-        ↔ drag to rotate
-      </div>
     </div>
+      {hint && (
+        <p className="text-xs text-primary dark:text-white/70 text-center mt-2">
+          ↔ {hint}
+        </p>
+      )}
+    </>
   );
 }

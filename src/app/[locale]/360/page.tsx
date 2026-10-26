@@ -73,6 +73,7 @@ export default function SpinPage() {
                   extension={set.extension}
                   width={set.width}
                   height={set.height}
+                  hint={t("hint")}
                 />
                 <p className="mt-4 text-primary dark:text-white/70 text-sm">
                   {t(`sets.${set.slug}.description`)}
