@@ -7,7 +7,8 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "links": "Links"
+    "links": "Links",
+    "360": "360°"
   },
   "common": {
     "openMenu": "Open menu",
@@ -98,6 +99,13 @@
     "contactLink": "Get in touch →",
     "serviceArea": "SERVICE AREA",
     "serviceAreaText": "Photographer Oss · Den Bosch · Nijmegen · Uden · Eindhoven · Utrecht · Breda · Amsterdam · Rotterdam · Deventer · Groningen and the rest of the Netherlands"
+  },
+  "spin": {
+    "title": "360°",
+    "subtitle": "Interactive 360° product photography. Drag to rotate.",
+    "metaTitle": "360° Product Photography — Michiel Maessen Photography",
+    "metaDescription": "Interactive 360° product photography by Michiel Maessen. View products from every angle.",
+    "comingSoon": "Coming soon — the first 360° sets are currently being shot."
   },
   "links": {
     "title": "LINKS"
