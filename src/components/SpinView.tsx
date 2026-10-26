@@ -97,7 +97,7 @@ export default function SpinView({
     <div
       ref={containerRef}
       className="relative select-none overflow-hidden bg-surface dark:bg-surface-dark rounded-lg"
-      style={{ aspectRatio: `${width}/${height}`, maxWidth: width, cursor: dragging ? "grabbing" : "grab" }}
+      style={{ aspectRatio: `${width}/${height}`, maxWidth: width, cursor: dragging ? "grabbing" : "grab", touchAction: "pan-y" }}
       onMouseDown={(e) => { e.preventDefault(); startDrag(e.clientX); }}
       onTouchStart={(e) => startDrag(e.touches[0].clientX)}
     >
