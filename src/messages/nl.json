@@ -69,7 +69,8 @@
       "auto": { "label": "AUTO", "description": "Automotive" },
       "model": { "label": "MODEL", "description": "Modelfotografie" },
       "webshop": { "label": "WEBSHOP", "description": "Webshop fotografie" },
-      "vrij-werk": { "label": "VRIJ WERK", "description": "Persoonlijke projecten" }
+      "vrij-werk": { "label": "VRIJ WERK", "description": "Persoonlijke projecten" },
+      "360": { "label": "360°", "description": "Interactieve productfotografie" }
     }
   },
   "gallery": {

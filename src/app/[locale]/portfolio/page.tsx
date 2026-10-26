@@ -48,6 +48,26 @@ export default function PortfolioPage() {
               </div>
             </Link>
           ))}
+          <Link
+            href="/360"
+            className="group relative aspect-square overflow-hidden"
+          >
+            <Image
+              src="/images/360/Bad Bunny Adidas/314312744304_01_spin.png"
+              alt={t("categories.360.label")}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors flex flex-col items-center justify-center">
+              <span className="font-heading text-3xl sm:text-4xl text-white tracking-wider">
+                {t("categories.360.label")}
+              </span>
+              <span className="text-white/70 text-sm mt-1">
+                {t("categories.360.description")}
+              </span>
+            </div>
+          </Link>
         </div>
       </section>
     </div>
