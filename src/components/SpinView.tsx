@@ -69,7 +69,7 @@ export default function SpinView({
       const delta = clientX - dragStartX.current;
       const sensitivity = rect.width / frameCount;
       const frameDelta = Math.round(delta / sensitivity);
-      setFrame(((dragStartFrame.current + frameDelta) % frameCount + frameCount) % frameCount);
+      setFrame(((dragStartFrame.current - frameDelta) % frameCount + frameCount) % frameCount);
     },
     [dragging, frameCount]
   );
