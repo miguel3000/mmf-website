@@ -34,7 +34,7 @@ const spinSets: {
     prefix: "314312744304_",
     suffix: "_spin",
     padDigits: 2,
-    extension: "png",
+    extension: "jpg",
     width: 2000,
     height: 2000,
   },

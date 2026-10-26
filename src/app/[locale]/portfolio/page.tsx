@@ -53,7 +53,7 @@ export default function PortfolioPage() {
             className="group relative aspect-square overflow-hidden"
           >
             <Image
-              src="/images/360/Bad Bunny Adidas/314312744304_01_spin.png"
+              src="/images/360/Bad Bunny Adidas/314312744304_01_spin.jpg"
               alt={t("categories.360.label")}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
