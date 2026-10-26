@@ -50,7 +50,7 @@ export default function SpinPage() {
           <h1 className="font-heading text-5xl sm:text-7xl tracking-wider text-primary dark:text-white/90">
             {t("title")}
           </h1>
-          <p className="mt-4 text-secondary dark:text-white/50 max-w-2xl mx-auto">
+          <p className="mt-4 text-primary dark:text-white/70 max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function SpinPage() {
                   width={set.width}
                   height={set.height}
                 />
-                <p className="mt-4 text-secondary dark:text-white/50 text-sm">
+                <p className="mt-4 text-primary dark:text-white/70 text-sm">
                   {t(`sets.${set.slug}.description`)}
                 </p>
               </div>

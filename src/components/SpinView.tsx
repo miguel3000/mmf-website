@@ -106,7 +106,7 @@ export default function SpinView({
       onTouchStart={(e) => startDrag(e.touches[0].clientX)}
     >
       {!loaded && (
-        <div className="absolute inset-0 flex items-center justify-center text-muted dark:text-white/40 text-sm">
+        <div className="absolute inset-0 flex items-center justify-center text-primary dark:text-white/70 text-sm">
           Loading 360°…
         </div>
       )}
