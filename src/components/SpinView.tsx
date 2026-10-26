@@ -63,10 +63,11 @@ export default function SpinView({
       const img = new Image();
       img.onload = () => {
         count++;
-        if (count === 1) drawFrame(0);
+        if (i === 0) drawFrame(0);
         if (count === frameCount) {
           loadedRef.current = true;
           if (loadingRef.current) loadingRef.current.style.display = "none";
+          drawFrame(frameRef.current);
         }
       };
       img.src = getSrc(i);
