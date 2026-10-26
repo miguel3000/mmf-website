@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
-import Image from "next/image";
+import { useRef, useEffect, useCallback } from "react";
 
 interface SpinViewProps {
   folder: string;
@@ -30,99 +29,135 @@ export default function SpinView({
   autoplay = false,
   autoplaySpeed = 80,
 }: SpinViewProps) {
-  const [frame, setFrame] = useState(0);
-  const [dragging, setDragging] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const framesRef = useRef<HTMLImageElement[]>([]);
+  const frameRef = useRef(0);
+  const draggingRef = useRef(false);
   const dragStartX = useRef(0);
   const dragStartFrame = useRef(0);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const loadedRef = useRef(false);
+  const loadingRef = useRef<HTMLDivElement>(null);
   const autoplayRef = useRef<ReturnType<typeof setInterval>>(undefined);
 
   const pad = (n: number) => String(n + 1).padStart(padDigits, "0");
-  const src = (i: number) => `${folder}/${prefix}${pad(i)}${suffix}.${extension}`;
+  const getSrc = useCallback(
+    (i: number) => `${folder}/${prefix}${pad(i)}${suffix}.${extension}`,
+    [folder, prefix, suffix, padDigits, extension]
+  );
+
+  const drawFrame = useCallback((index: number) => {
+    const canvas = canvasRef.current;
+    const img = framesRef.current[index];
+    if (!canvas || !img) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }, []);
 
   useEffect(() => {
     let count = 0;
+    const images: HTMLImageElement[] = [];
     for (let i = 0; i < frameCount; i++) {
-      const img = new globalThis.Image();
+      const img = new Image();
       img.onload = () => {
         count++;
-        if (count === frameCount) setLoaded(true);
+        if (count === 1) drawFrame(0);
+        if (count === frameCount) {
+          loadedRef.current = true;
+          if (loadingRef.current) loadingRef.current.style.display = "none";
+        }
       };
-      img.src = src(i);
+      img.src = getSrc(i);
+      images.push(img);
     }
-  }, [folder, frameCount, prefix, extension]);
+    framesRef.current = images;
+  }, [frameCount, getSrc, drawFrame]);
 
   useEffect(() => {
-    if (!autoplay || dragging) {
+    if (!autoplay) {
       clearInterval(autoplayRef.current);
       return;
     }
     autoplayRef.current = setInterval(() => {
-      setFrame((f) => (f + 1) % frameCount);
+      if (draggingRef.current) return;
+      frameRef.current = (frameRef.current + 1) % frameCount;
+      drawFrame(frameRef.current);
     }, autoplaySpeed);
     return () => clearInterval(autoplayRef.current);
-  }, [autoplay, dragging, frameCount, autoplaySpeed]);
+  }, [autoplay, frameCount, autoplaySpeed, drawFrame]);
 
-  const handleMove = useCallback(
-    (clientX: number) => {
-      if (!dragging || !containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const updateFrame = (clientX: number) => {
+      if (!draggingRef.current) return;
+      const rect = container.getBoundingClientRect();
       const delta = clientX - dragStartX.current;
       const sensitivity = rect.width / frameCount;
       const frameDelta = Math.round(delta / sensitivity);
-      setFrame(((dragStartFrame.current - frameDelta) % frameCount + frameCount) % frameCount);
-    },
-    [dragging, frameCount]
-  );
+      const newFrame = ((dragStartFrame.current - frameDelta) % frameCount + frameCount) % frameCount;
+      if (newFrame !== frameRef.current) {
+        frameRef.current = newFrame;
+        drawFrame(newFrame);
+      }
+    };
 
-  const startDrag = (clientX: number) => {
-    setDragging(true);
-    dragStartX.current = clientX;
-    dragStartFrame.current = frame;
-  };
+    const onMouseDown = (e: MouseEvent) => {
+      e.preventDefault();
+      draggingRef.current = true;
+      dragStartX.current = e.clientX;
+      dragStartFrame.current = frameRef.current;
+      container.style.cursor = "grabbing";
+    };
+    const onTouchStart = (e: TouchEvent) => {
+      draggingRef.current = true;
+      dragStartX.current = e.touches[0].clientX;
+      dragStartFrame.current = frameRef.current;
+    };
+    const onMouseMove = (e: MouseEvent) => updateFrame(e.clientX);
+    const onTouchMove = (e: TouchEvent) => updateFrame(e.touches[0].clientX);
+    const onEnd = () => {
+      draggingRef.current = false;
+      container.style.cursor = "grab";
+    };
 
-  useEffect(() => {
-    if (!dragging) return;
-    const onMove = (e: MouseEvent) => handleMove(e.clientX);
-    const onTouchMove = (e: TouchEvent) => handleMove(e.touches[0].clientX);
-    const onEnd = () => setDragging(false);
-    window.addEventListener("mousemove", onMove);
+    container.addEventListener("mousedown", onMouseDown);
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
+    window.addEventListener("mousemove", onMouseMove);
     window.addEventListener("mouseup", onEnd);
     window.addEventListener("touchmove", onTouchMove);
     window.addEventListener("touchend", onEnd);
+
     return () => {
-      window.removeEventListener("mousemove", onMove);
+      container.removeEventListener("mousedown", onMouseDown);
+      container.removeEventListener("touchstart", onTouchStart);
+      window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mouseup", onEnd);
       window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("touchend", onEnd);
     };
-  }, [dragging, handleMove]);
+  }, [frameCount, drawFrame]);
 
   return (
     <>
-    <div
-      ref={containerRef}
-      className="relative select-none overflow-hidden bg-surface dark:bg-surface-dark rounded-lg"
-      style={{ aspectRatio: `${width}/${height}`, maxWidth: width, cursor: dragging ? "grabbing" : "grab", touchAction: "pan-y" }}
-      onMouseDown={(e) => { e.preventDefault(); startDrag(e.clientX); }}
-      onTouchStart={(e) => startDrag(e.touches[0].clientX)}
-    >
-      {!loaded && (
-        <div className="absolute inset-0 flex items-center justify-center text-primary dark:text-white/70 text-sm">
+      <div
+        ref={containerRef}
+        className="relative select-none overflow-hidden bg-surface dark:bg-surface-dark rounded-lg"
+        style={{ aspectRatio: `${width}/${height}`, maxWidth: width, cursor: "grab", touchAction: "pan-y" }}
+      >
+        <div ref={loadingRef} className="absolute inset-0 flex items-center justify-center text-primary dark:text-white/70 text-sm">
           Loading 360°…
         </div>
-      )}
-      <Image
-        src={src(frame)}
-        alt={`360° view — frame ${frame + 1} of ${frameCount}`}
-        width={width}
-        height={height}
-        className="w-full h-full object-contain"
-        priority={frame === 0}
-        draggable={false}
-      />
-    </div>
+        <canvas
+          ref={canvasRef}
+          width={width}
+          height={height}
+          className="w-full h-full"
+        />
+      </div>
       {hint && (
         <p className="text-xs text-primary dark:text-white/70 text-center mt-2">
           ↔ {hint}
